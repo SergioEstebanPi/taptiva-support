@@ -77,6 +77,9 @@
             font-size: 21px;
             font-weight: 600;
             letter-spacing: -.5px;
+
+            color: var(--text);
+            text-decoration: none;
         }
 
         nav {
@@ -365,6 +368,111 @@
             color: white;
         }
 
+        .screenshots {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 45px;
+        }
+
+        .screenshots img {
+            width: 50%;
+            max-width: 300px;
+            border-radius: 22px;
+            display: block;
+
+            box-shadow:
+                0 25px 70px rgba(0,0,0,.45);
+
+            transition: transform .25s ease;
+        }
+
+        .screenshots img:hover {
+            transform: translateY(-6px);
+        }
+
+        .screenshots img:nth-child(2) {
+            transform: translateY(-20px);
+        }
+
+        .screenshots img:nth-child(2):hover {
+            transform: translateY(-26px);
+        }
+
+        .screenshot {
+            cursor: zoom-in;
+        }
+
+        /* Fullscreen viewer */
+
+        .image-viewer {
+            position: fixed;
+            inset: 0;
+
+            z-index: 9999;
+
+            display: none;
+
+            align-items: center;
+            justify-content: center;
+
+            padding: 40px;
+
+            background: rgba(0, 0, 0, .94);
+
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .image-viewer.active {
+            display: flex;
+        }
+
+        .image-viewer img {
+            max-width: 95vw;
+            max-height: 92vh;
+
+            width: auto;
+            height: auto;
+
+            object-fit: contain;
+
+            border-radius: 12px;
+
+            box-shadow:
+                0 30px 100px rgba(0,0,0,.7);
+        }
+
+        .close-viewer {
+            position: absolute;
+
+            top: 25px;
+            right: 30px;
+
+            width: 45px;
+            height: 45px;
+
+            border: none;
+            border-radius: 50%;
+
+            background: rgba(255,255,255,.12);
+            color: white;
+
+            font-size: 32px;
+            line-height: 1;
+
+            cursor: pointer;
+
+            z-index: 10000;
+        }
+
+        .close-viewer:hover {
+            background: rgba(255,255,255,.22);
+        }
+
+
+
         /* MOBILE */
 
         @media (max-width: 650px) {
@@ -400,22 +508,30 @@
             .section-title h2 {
                 font-size: 34px;
             }
+
+            .screenshots {
+                gap: 8px;
+            }
+
+            .screenshots img {
+                width: 32%;
+                border-radius: 14px;
+            }
         }
     </style>
 </head>
+
 
 <body>
 
 <header>
     <div class="nav">
 
-        <div class="logo">
-            Taptiva
-        </div>
+        <a href="home.html" class="logo">Taptiva</a>
 
         <nav>
             <a href="#features">Features</a>
-            <a href="support.html">Support</a>
+            <a href="index.html">Support</a>
         </nav>
 
     </div>
@@ -451,7 +567,7 @@
             </a>
 
             <a class="button button-secondary"
-               href="support.html">
+               href="index.html">
                 Get Support
             </a>
 
@@ -468,9 +584,40 @@
 
             <div class="device-content">
 
-                <div class="device-icon">
-                    📱
-                </div>
+            <div class="screenshots">
+
+                <img
+                    src="img/first.png"
+                    alt="Taptiva QR pairing"
+                    class="screenshot"
+                >
+
+                <img
+                    src="img/second.png"
+                    alt="Taptiva connected to Mac"
+                    class="screenshot"
+                >
+
+                <img
+                    src="img/third.png"
+                    alt="Taptiva remote trackpad"
+                    class="screenshot"
+                >
+
+            </div>
+
+            <!-- Fullscreen viewer -->
+
+            <div id="imageViewer" class="image-viewer">
+
+                <button id="closeViewer" class="close-viewer">
+                    ×
+                </button>
+
+                <img id="fullscreenImage" src="" alt="">
+
+            </div>
+
 
                 <h2>
                     Control your Mac<br>
@@ -479,8 +626,7 @@
 
                 <p>
                     Scan the QR code shown by Taptiva on your Mac
-                    and connect your phone directly over your local
-                    network.
+                    to pair your phone directly over your local network.
                 </p>
 
             </div>
@@ -488,6 +634,7 @@
         </div>
 
     </section>
+
 
 
     <!-- FEATURES -->
@@ -623,6 +770,46 @@
     <a href="index.html">Support</a>
 
 </footer>
+
+<script>
+    const screenshots = document.querySelectorAll('.screenshot');
+    const viewer = document.getElementById('imageViewer');
+    const fullscreenImage = document.getElementById('fullscreenImage');
+    const closeViewer = document.getElementById('closeViewer');
+
+    screenshots.forEach(image => {
+        image.addEventListener('click', () => {
+
+            fullscreenImage.src = image.src;
+            fullscreenImage.alt = image.alt;
+
+            viewer.classList.add('active');
+
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    function closeImageViewer() {
+        viewer.classList.remove('active');
+
+        document.body.style.overflow = '';
+    }
+
+    closeViewer.addEventListener('click', closeImageViewer);
+
+    viewer.addEventListener('click', (event) => {
+        if (event.target === viewer) {
+            closeImageViewer();
+        }
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            closeImageViewer();
+        }
+    });
+</script>
+
 
 </body>
 </html>
