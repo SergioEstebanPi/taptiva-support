@@ -80,7 +80,19 @@
 
             color: var(--text);
             text-decoration: none;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
         }
+
+        .big-logo {
+            color: var(--text);
+            text-decoration: none;
+            width: 200px;
+            height: 200px;
+            background-color: transparent;
+        }
+
 
         nav {
             display: flex;
@@ -103,7 +115,7 @@
         .hero {
             max-width: 1000px;
             margin: auto;
-            padding: 140px 24px 120px;
+            padding: 25px 24px 120px;
             text-align: center;
         }
 
@@ -117,7 +129,7 @@
         .hero h1 {
             margin: 0;
 
-            font-size: clamp(58px, 10vw, 105px);
+            font-size: clamp(58px, 10vw, 85px);
             line-height: .95;
             letter-spacing: -6px;
             font-weight: 700;
@@ -133,9 +145,9 @@
         }
 
         .hero h2 {
-            margin: 25px 0 0;
+            margin: 10px 0;
 
-            font-size: clamp(24px, 4vw, 40px);
+            font-size: clamp(24px, 4vw, 30px);
             letter-spacing: -1.5px;
             font-weight: 600;
         }
@@ -527,7 +539,9 @@
 <header>
     <div class="nav">
 
-        <a href="home.html" class="logo">Taptiva</a>
+        <a href="home.html" class="logo">
+            <img src="img/logo.png" alt="Taptiva">Taptiva
+        </a>
 
         <nav>
             <a href="#features">Features</a>
@@ -553,6 +567,8 @@
         <h2>
             Your phone. Your Mac. Instantly connected.
         </h2>
+
+        <img class="big-logo" src="img/big-logo.png" alt="Taptiva">
 
         <p>
             Turn your iPhone or Android phone into a powerful
