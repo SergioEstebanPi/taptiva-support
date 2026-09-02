@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M4Q5DTLF');</script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -483,6 +491,62 @@
             background: rgba(255,255,255,.22);
         }
 
+        .hero-support {
+            margin-top: 32px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            color: var(--secondary);
+            font-size: 14px;
+        }
+
+        .hero-support .ko-fi-button {
+            margin-top: 0;
+        }
+
+        .ko-fi-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+
+            margin-top: 18px;
+            padding: 12px 22px;
+
+            color: #fff !important;
+            background: linear-gradient(135deg, #ff5f5f, #ff8a5b);
+
+            border: 1px solid rgba(255,255,255,.15);
+            border-radius: 999px;
+
+            text-decoration: none !important;
+            font-size: 15px !important;
+            font-weight: 600;
+
+            box-shadow:
+                0 8px 24px rgba(255, 95, 95, .20);
+
+            transition:
+                transform .2s ease,
+                box-shadow .2s ease,
+                filter .2s ease;
+        }
+
+        .ko-fi-button:hover {
+            color: #fff !important;
+            transform: translateY(-2px);
+            filter: brightness(1.08);
+
+            box-shadow:
+                0 12px 32px rgba(255, 95, 95, .32);
+        }
+
+        .ko-fi-button:active {
+            transform: translateY(0);
+        }
 
 
         /* MOBILE */
@@ -535,6 +599,10 @@
 
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4Q5DTLF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <header>
     <div class="nav">
@@ -576,11 +644,17 @@
             keyboard, music controls and app switching.
         </p>
 
+        <!-- MAIN ACTIONS -->
+
         <div class="hero-buttons">
 
             <a
                 class="button button-primary"
-                href="https://github.com/SergioEstebanPi/taptiva-support/releases/latest/download/Taptiva.dmg">
+                href="https://github.com/SergioEstebanPi/taptiva-support/releases/latest/download/Taptiva.dmg"
+                onclick="gtag('event', 'download', {
+                    file_name: 'Taptiva.dmg',
+                    version: '1.0'
+                });">
                 ↓ Download Taptiva 1.0
             </a>
 
@@ -594,6 +668,23 @@
 
         <div class="hero-meta">
             Free · No account required · macOS
+        </div>
+
+        <!-- SUPPORT -->
+
+        <div class="hero-support">
+
+            <span>Enjoying Taptiva?</span>
+
+            <a
+                href="https://ko-fi.com/sergiopinav"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="ko-fi-button"
+                onclick="gtag('event', 'ko_fi_click');">
+                ☕ Support Taptiva
+            </a>
+
         </div>
 
     </section>
