@@ -191,18 +191,15 @@
 
         .eyebrow {
             color: var(--blue);
-
-            font-size: 15px;
+            font-size: 12px;
             font-weight: 600;
-
-            margin-bottom: 20px;
+            margin-bottom: 5px;
         }
 
         .hero h1 {
             margin: 0;
 
-            font-size:
-                clamp(58px, 10vw, 85px);
+            font-size: clamp(58px, 10vw, 60px);
 
             line-height: .95;
             letter-spacing: -6px;
@@ -222,8 +219,7 @@
         .hero h2 {
             margin: 10px 0;
 
-            font-size:
-                clamp(24px, 4vw, 30px);
+            font-size: clamp(15px, 4vw, 20px);
 
             letter-spacing: -1.5px;
             font-weight: 600;
@@ -240,8 +236,8 @@
         }
 
         .big-logo {
-            width: 200px;
-            height: 200px;
+            width: 500px;
+            height: 315px;
 
             object-fit: contain;
 
@@ -250,8 +246,22 @@
             margin: 10px auto;
         }
 
+        .hero-video {
+            display: block;
+            width: min(100%, 600px);
+            height: auto;
+            margin: 0px auto;
+            border-radius: 24px;
+            object-fit: cover;
+
+            box-shadow:
+                0 20px 60px rgba(0, 0, 0, 0.45),
+                0 0 80px rgba(41, 151, 255, 0.08);
+        }
+
+
         .hero-buttons {
-            margin-top: 35px;
+            margin-top: 10px;
 
             display: flex;
             justify-content: center;
@@ -881,7 +891,7 @@
 
 
     <!-- =========================
-         HERO
+        HERO
     ========================= -->
 
     <section class="hero">
@@ -905,21 +915,19 @@
         </h2>
 
 
-        <img
-            class="big-logo"
-            src="img/big-logo.png"
-            alt="Taptiva">
+        <video
+            class="hero-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            aria-label="Taptiva controlling a Mac from a phone">
 
+            <source src="video/taptiva-demo.mp4" type="video/mp4">
 
-        <p data-i18n="hero.description">
-
-            Turn your iPhone or Android phone into a
-            powerful remote control for your Mac —
-            with trackpad gestures, keyboard, music
-            controls and app switching.
-
-        </p>
-
+            Your browser does not support video playback.
+        </video>
 
         <!-- MAIN ACTIONS -->
 
@@ -932,10 +940,15 @@
                     file_name: 'Taptiva.dmg',
                     version: '1.0'
                 });">
+
                 <span class="apple-logo" aria-hidden="true">
                     <img src="img/apple-logo.svg" alt="">
                 </span>
-                <span data-i18n="hero.download">Download Taptiva 1.0</span>
+
+                <span data-i18n="hero.download">
+                    Download Taptiva 1.0
+                </span>
+
             </a>
 
 
@@ -950,7 +963,6 @@
 
         </div>
 
-
         <div
             class="hero-meta"
             data-i18n="hero.free">
@@ -959,29 +971,14 @@
 
         </div>
 
+        <p data-i18n="hero.description">
 
-        <!-- SUPPORT -->
+            Turn your iPhone or Android phone into a
+            powerful remote control for your Mac —
+            with trackpad gestures, keyboard, music
+            controls and app switching.
 
-        <div class="hero-support">
-
-            <span data-i18n="hero.enjoy">
-                Enjoying Taptiva?
-            </span>
-
-
-            <a
-                href="https://ko-fi.com/taptiva"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="ko-fi-button"
-                data-i18n="hero.support"
-                onclick="gtag('event', 'ko_fi_click');">
-
-                ☕ Support Taptiva
-
-            </a>
-
-        </div>
+        </p>
 
     </section>
 

@@ -12,6 +12,7 @@
             --text: #f5f5f7;
             --secondary: #8e8e93;
             --blue: #2997ff;
+            --green: #30d158;
         }
 
         * {
@@ -23,7 +24,7 @@
             margin: 0;
             width: 100%;
             min-height: 100%;
-            background: #000;
+            background: var(--bg);
         }
 
         body {
@@ -38,7 +39,7 @@
                     rgba(41, 151, 255, 0.10),
                     transparent 35%
                 ),
-                #000;
+                var(--bg);
 
             color: var(--text);
 
@@ -73,7 +74,7 @@
             font-weight: 700;
         }
 
-        p {
+        .description {
             margin: 14px 0 0;
             color: var(--secondary);
             font-size: 16px;
@@ -85,17 +86,97 @@
             height: 24px;
             margin: 30px auto 0;
 
-            border: 2px solid rgba(255,255,255,.12);
+            border: 2px solid rgba(255, 255, 255, .12);
             border-top-color: var(--blue);
             border-radius: 50%;
 
             animation: spin .8s linear infinite;
         }
 
+        .spinner.done {
+            animation: none;
+            border: 2px solid var(--green);
+            position: relative;
+        }
+
+        .spinner.done::after {
+            content: "✓";
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -52%);
+
+            color: var(--green);
+            font-size: 14px;
+            font-weight: 700;
+        }
+
         .status {
             margin-top: 18px;
             font-size: 13px;
             color: #636366;
+        }
+
+        .status.success {
+            color: var(--green);
+        }
+
+        .fallback {
+            margin-top: 24px;
+            font-size: 13px;
+            color: #636366;
+        }
+
+        .fallback a {
+            color: var(--blue);
+            text-decoration: none;
+        }
+
+        .fallback a:hover {
+            text-decoration: underline;
+        }
+
+        .support {
+            margin-top: 42px;
+            padding-top: 28px;
+            border-top: 1px solid rgba(255, 255, 255, .08);
+        }
+
+        .support p {
+            margin: 0 0 14px;
+            color: #8e8e93;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .support a {
+            display: inline-block;
+            color: #f5f5f7;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 9px 16px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, .08);
+            border: 1px solid rgba(255, 255, 255, .08);
+        }
+
+        .support a:hover {
+            background: rgba(255, 255, 255, .14);
+        }
+
+        .back {
+            display: block;
+            margin-top: 28px;
+            color: #636366;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .back:hover {
+            color: #8e8e93;
         }
 
         @keyframes spin {
@@ -115,17 +196,64 @@
             src="/img/big-logo.png"
             alt="Taptiva">
 
-        <h1>Downloading Taptiva</h1>
+        <h1 id="title">
+            Downloading Taptiva
+        </h1>
 
-        <p>
+        <p class="description" id="description">
             Your download should start automatically.
         </p>
 
-        <div class="spinner"></div>
+        <div
+            class="spinner"
+            id="spinner"
+            aria-hidden="true">
+        </div>
 
-        <div class="status">
+        <div
+            class="status"
+            id="status">
             Taptiva 1.0 · Free for Mac
         </div>
+
+        <p class="fallback">
+            Download not starting?
+            <a
+                href="https://github.com/SergioEstebanPi/taptiva-support/releases/latest/download/Taptiva.dmg"
+                onclick="gtag('event', 'download_manual', {
+                    file_name: 'Taptiva.dmg',
+                    version: '1.0'
+                });">
+                Download manually
+            </a>
+        </p>
+
+        <div class="support">
+
+            <p>
+                Taptiva is free.
+                If you enjoy using it, you can support its development.
+            </p>
+
+            <a
+                href="https://ko-fi.com/taptiva"
+                target="_blank"
+                rel="noopener noreferrer"
+                onclick="gtag('event', 'ko_fi_click');">
+
+                ☕ Support Taptiva
+
+            </a>
+
+        </div>
+
+        <a
+            class="back"
+            href="/">
+
+            ← Back to Taptiva
+
+        </a>
 
     </main>
 
@@ -133,14 +261,30 @@
         const downloadUrl =
             "https://github.com/SergioEstebanPi/taptiva-support/releases/latest/download/Taptiva.dmg";
 
+        const spinner = document.getElementById("spinner");
+        const title = document.getElementById("title");
+        const description = document.getElementById("description");
+        const status = document.getElementById("status");
+
         setTimeout(() => {
+
+            // Stop the loader
+            spinner.classList.add("done");
+
+            // Update the interface
+            title.textContent = "Download started";
+            description.textContent =
+                "Taptiva is being downloaded to your Mac.";
+
+            status.textContent =
+                "Taptiva 1.0 · Download in progress";
+
+            status.classList.add("success");
+
+            // Start the download
             window.location.href = downloadUrl;
 
-            setTimeout(() => {
-                window.close();
-            }, 2500);
-
-        }, 500);
+        }, 1000);
     </script>
 
 </body>
