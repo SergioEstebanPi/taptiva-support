@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/SergioEstebanPi/taptiva-support/releases/latest/download/Taptiva.dmg">
+  <a href="https://taptiva.tech/download/">
     <strong>Download Taptiva 1.0 — Free</strong>
   </a>
 </p>
@@ -97,7 +97,7 @@ For more information, see our [Privacy Policy](privacy.html).
 
 ### Taptiva 1.0
 
-[**Download Taptiva 1.0 — Free**](https://github.com/SergioEstebanPi/taptiva-support/releases/latest/download/Taptiva.dmg)
+[**Download Taptiva 1.0 — Free**](https://taptiva.tech/download/)
 
 No account required.
 
@@ -109,7 +109,7 @@ Taptiva is an independent project and is currently free.
 
 If you find Taptiva useful, you can support its development:
 
-[☕ **Support Taptiva on Ko-fi**](https://ko-fi.com/sergiopinav)
+[☕ **Support Taptiva on Ko-fi**](https://ko-fi.com/taptiva)
 
 Every contribution helps with development, testing and future updates.
 
