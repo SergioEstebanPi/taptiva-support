@@ -121,7 +121,7 @@ If you encounter a problem or have a suggestion, please open an issue in this re
 
 You can also contact:
 
-**sergio.pina.v@icloud.com**
+**support@taptiva.tech**
 
 ---
 
