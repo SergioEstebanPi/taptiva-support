@@ -1,0 +1,165 @@
+{
+    "nav": {
+        "home": "Home",
+        "features": "Features",
+        "support": "Support",
+        "privacy": "Privacy"
+    },
+
+    "hero": {
+        "eyebrow": "Taptiva 1.0 · Free for Mac",
+        "title": "Taptiva",
+        "subtitle": "Your phone. Your Mac. Fully connected.",
+        "description": "Turn your iPhone or Android phone into a powerful remote control for your Mac — with trackpad gestures, keyboard, music controls and app switching.",
+        "download": "↓ Download Taptiva 1.0",
+        "discover": "Discover Taptiva",
+        "free": "Free · No account required · macOS",
+        "enjoy": "Enjoying Taptiva?",
+        "support": "☕ Support Taptiva"
+    },
+
+    "features": {
+        "title": "Everything you need.",
+        "subtitle": "A simple and powerful way to control your Mac from your phone.",
+
+        "trackpad": {
+            "title": "Trackpad",
+            "description": "Control your Mac with smooth touch gestures. Move the cursor, click, scroll and navigate naturally."
+        },
+
+        "keyboard": {
+            "title": "Keyboard",
+            "description": "Type directly from your phone using a full remote keyboard designed for your Mac."
+        },
+
+        "music": {
+            "title": "Music controls",
+            "description": "Control your music without leaving your desk. Play, pause, skip tracks and adjust playback."
+        },
+
+        "apps": {
+            "title": "App switching",
+            "description": "Quickly switch between applications on your Mac directly from your phone."
+        }
+    },
+
+    "device": {
+        "title": "Your phone becomes a remote.",
+        "description": "Connect your phone directly to your Mac and control it from anywhere on your local network.",
+        "icon": "⌁"
+    },
+
+    "privacy": {
+        "title": "Private by design.",
+        "description": "Taptiva connects directly between your phone and Mac. No account, subscription or cloud service is required.",
+        "learnMore": "Learn more about privacy"
+    },
+
+    "support": {
+        "title": "Support Taptiva",
+        "description": "Taptiva is free and independently developed. If you find it useful, consider supporting its development.",
+        "button": "☕ Support Taptiva"
+    },
+
+    "footer": {
+        "rights": "All rights reserved."
+    },
+
+    "supportPage": {
+        "metaTitle": "Taptiva Support",
+
+        "title": "Taptiva Support",
+
+        "subtitle": "Remote Touch Control for Mac. Fast, private, and directly connected to your phone.",
+
+        "connection": {
+            "title": "How to connect",
+            "description": "Open Taptiva on your Mac and scan the QR code with your iPhone or Android phone. Your phone connects directly to your Mac."
+        },
+
+        "accessibility": {
+            "title": "Accessibility",
+            "description": "Taptiva requires Accessibility permission to control your Mac. Open System Settings, then Privacy & Security → Accessibility, and enable Taptiva."
+        },
+
+        "connectionProblems": {
+            "title": "Connection problems",
+            "description": "Make sure your Mac and phone are connected to the same Wi-Fi network. If necessary, reconnect by scanning the QR code again."
+        },
+
+        "privacy": {
+            "title": "Privacy",
+            "description": "Taptiva uses a direct connection between your phone and Mac. No cloud account is required."
+        },
+
+        "support": {
+            "title": "Enjoying Taptiva?",
+            "description": "Taptiva is free and independently developed. If you find it useful, consider supporting its development.",
+            "button": "☕ Support Taptiva"
+        },
+
+        "help": {
+            "title": "Need help?",
+            "description": "If you have a problem with Taptiva, we're here to help."
+        }
+    },
+
+    "privacyPage": {
+        "metaTitle": "Taptiva Privacy Policy",
+
+        "title": "Privacy Policy",
+
+        "subtitle": "Your privacy matters.",
+
+        "overview": {
+            "title": "Overview",
+            "p1": "Taptiva is a remote touch control application for Mac. It allows users to control their Mac using an iPhone or Android device over a local network.",
+            "p2": "Taptiva is designed to work without requiring an account, cloud service, or subscription."
+        },
+
+        "dataCollection": {
+            "title": "Data Collection",
+            "p1": "Taptiva itself does not collect, store, or sell personal information through the application. The Taptiva app does not require an account or cloud service to provide its core functionality.",
+            "p2": "Our website uses Google Analytics to understand how visitors use the website and to help us improve its content and functionality.",
+            "p3": "Google Analytics may collect information such as approximate geographic location, browser and device information, session statistics, and interactions with the website. Google Analytics may also use first-party cookies, including the _ga cookie, to distinguish users and sessions.",
+            "p4": "We do not intentionally send personally identifiable information to Google Analytics."
+        },
+
+        "localNetwork": {
+            "title": "Local Network Communication",
+            "p1": "Taptiva communicates directly between your Mac and your mobile device over your local network.",
+            "p2": "Information exchanged during this connection is used solely to provide the remote control functionality of the application."
+        },
+
+        "accessibility": {
+            "title": "Accessibility Permission",
+            "p1": "Taptiva requires macOS Accessibility permission to perform remote control actions on your Mac, such as interacting with the mouse, keyboard, and other supported system controls.",
+            "p2": "This permission is managed by macOS and can be revoked at any time in System Settings → Privacy & Security → Accessibility."
+        },
+
+        "thirdParty": {
+            "title": "Third-Party Services",
+            "p1": "Our website uses Google Analytics, a web analytics service provided by Google LLC.",
+            "p2": "Google Analytics is used to measure website usage and understand how visitors interact with Taptiva's website. We do not use Google Analytics for advertising or remarketing unless this Privacy Policy is updated to reflect such use.",
+            "p3": "Google Analytics may use cookies and other identifiers to provide its measurement services. The use of these technologies may be subject to applicable privacy and consent requirements depending on the visitor's location.",
+            "p4": "Taptiva does not use third-party advertising services on this website."
+        },
+
+        "children": {
+            "title": "Children's Privacy",
+            "description": "Taptiva does not knowingly collect personal information from children or other users."
+        },
+
+        "changes": {
+            "title": "Changes to This Policy",
+            "description": "We may update this Privacy Policy from time to time. Any changes will be published on this page with an updated effective date."
+        },
+
+        "contact": {
+            "title": "Contact",
+            "description": "If you have questions about this Privacy Policy or Taptiva, please contact us at:"
+        },
+
+        "updated": "Effective date: August 27, 2026"
+    }
+}

@@ -1,0 +1,165 @@
+{
+    "nav": {
+        "home": "홈",
+        "features": "기능",
+        "support": "지원",
+        "privacy": "개인정보 보호"
+    },
+
+    "hero": {
+        "eyebrow": "Taptiva 1.0 · Mac용 무료 앱",
+        "title": "Taptiva",
+        "subtitle": "당신의 휴대폰과 Mac을 하나로 연결하세요.",
+        "description": "iPhone 또는 Android 스마트폰을 강력한 Mac용 리모컨으로 바꿔보세요. 트랙패드 제스처, 키보드, 음악 제어 및 앱 전환을 지원합니다.",
+        "download": "↓ Taptiva 1.0 다운로드",
+        "discover": "Taptiva 알아보기",
+        "free": "무료 · 계정 필요 없음 · macOS",
+        "enjoy": "Taptiva가 마음에 드시나요?",
+        "support": "☕ Taptiva 후원하기"
+    },
+
+    "features": {
+        "title": "필요한 모든 기능.",
+        "subtitle": "휴대폰에서 Mac을 간편하고 강력하게 제어하는 새로운 방법.",
+
+        "trackpad": {
+            "title": "트랙패드",
+            "description": "부드러운 터치 제스처로 Mac을 제어하세요. 커서 이동, 클릭, 스크롤 및 자연스러운 탐색을 지원합니다."
+        },
+
+        "keyboard": {
+            "title": "키보드",
+            "description": "Mac에 맞게 설계된 완전한 원격 키보드를 사용하여 휴대폰에서 직접 텍스트를 입력하세요."
+        },
+
+        "music": {
+            "title": "음악 제어",
+            "description": "책상에서 일어나지 않고 음악을 제어하세요. 재생, 일시 정지, 곡 변경 및 재생 제어가 가능합니다."
+        },
+
+        "apps": {
+            "title": "앱 전환",
+            "description": "휴대폰에서 Mac의 애플리케이션 사이를 빠르게 전환하세요."
+        }
+    },
+
+    "device": {
+        "title": "휴대폰이 리모컨이 됩니다.",
+        "description": "휴대폰을 Mac에 직접 연결하고 로컬 네트워크의 어디에서든 Mac을 제어하세요.",
+        "icon": "⌁"
+    },
+
+    "privacy": {
+        "title": "처음부터 개인정보 보호를 고려했습니다.",
+        "description": "Taptiva는 휴대폰과 Mac을 직접 연결합니다. 계정, 구독 또는 클라우드 서비스가 필요하지 않습니다.",
+        "learnMore": "개인정보 보호에 대해 자세히 알아보기"
+    },
+
+    "support": {
+        "title": "Taptiva를 후원해주세요",
+        "description": "Taptiva는 무료로 제공되며 독립적으로 개발되고 있습니다. 유용하게 사용하고 계시다면 개발을 후원해 주세요.",
+        "button": "☕ Taptiva 후원하기"
+    },
+
+    "footer": {
+        "rights": "모든 권리 보유."
+    },
+
+    "supportPage": {
+        "metaTitle": "Taptiva 지원",
+
+        "title": "Taptiva 지원",
+
+        "subtitle": "Mac을 위한 원격 터치 컨트롤. 빠르고 안전하며 휴대폰에 직접 연결됩니다.",
+
+        "connection": {
+            "title": "연결 방법",
+            "description": "Mac에서 Taptiva를 열고 iPhone 또는 Android 스마트폰으로 QR 코드를 스캔하세요. 휴대폰이 Mac에 직접 연결됩니다."
+        },
+
+        "accessibility": {
+            "title": "손쉬운 사용",
+            "description": "Taptiva가 Mac을 제어하려면 손쉬운 사용 권한이 필요합니다. 시스템 설정을 열고 개인정보 보호 및 보안 → 손쉬운 사용으로 이동한 다음 Taptiva를 활성화하세요."
+        },
+
+        "connectionProblems": {
+            "title": "연결 문제",
+            "description": "Mac과 휴대폰이 동일한 Wi-Fi 네트워크에 연결되어 있는지 확인하세요. 필요한 경우 QR 코드를 다시 스캔하여 연결을 다시 설정하세요."
+        },
+
+        "privacy": {
+            "title": "개인정보 보호",
+            "description": "Taptiva는 휴대폰과 Mac 사이에 직접 연결을 사용합니다. 클라우드 계정이 필요하지 않습니다."
+        },
+
+        "support": {
+            "title": "Taptiva가 마음에 드시나요?",
+            "description": "Taptiva는 무료로 제공되며 독립적으로 개발되고 있습니다. 유용하게 사용하고 계시다면 개발을 후원해 주세요.",
+            "button": "☕ Taptiva 후원하기"
+        },
+
+        "help": {
+            "title": "도움이 필요하신가요?",
+            "description": "Taptiva 사용 중 문제가 발생하면 언제든지 문의해 주세요."
+        }
+    },
+
+    "privacyPage": {
+        "metaTitle": "Taptiva 개인정보 처리방침",
+
+        "title": "개인정보 처리방침",
+
+        "subtitle": "여러분의 개인정보 보호는 중요합니다.",
+
+        "overview": {
+            "title": "개요",
+            "p1": "Taptiva는 Mac용 원격 터치 컨트롤 애플리케이션입니다. 로컬 네트워크를 통해 iPhone 또는 Android 기기로 Mac을 제어할 수 있습니다.",
+            "p2": "Taptiva는 계정, 클라우드 서비스 또는 구독 없이 사용할 수 있도록 설계되었습니다."
+        },
+
+        "dataCollection": {
+            "title": "데이터 수집",
+            "p1": "Taptiva 앱 자체는 개인정보를 수집, 저장 또는 판매하지 않습니다. Taptiva의 주요 기능을 사용하기 위해 계정이나 클라우드 서비스가 필요하지 않습니다.",
+            "p2": "저희 웹사이트는 방문자가 사이트를 어떻게 사용하는지 파악하고 콘텐츠와 기능을 개선하기 위해 Google Analytics를 사용합니다.",
+            "p3": "Google Analytics는 대략적인 지리적 위치, 브라우저 및 기기 정보, 세션 통계, 웹사이트와의 상호작용 등의 정보를 수집할 수 있습니다. 또한 사용자와 세션을 구분하기 위해 _ga와 같은 자사 쿠키를 사용할 수 있습니다.",
+            "p4": "Google Analytics에 사용자를 개인적으로 식별할 수 있는 정보를 의도적으로 전송하지 않습니다."
+        },
+
+        "localNetwork": {
+            "title": "로컬 네트워크 통신",
+            "p1": "Taptiva는 로컬 네트워크를 통해 Mac과 모바일 기기 사이에서 직접 통신합니다.",
+            "p2": "이 연결을 통해 교환되는 정보는 애플리케이션의 원격 제어 기능을 제공하기 위한 목적으로만 사용됩니다."
+        },
+
+        "accessibility": {
+            "title": "손쉬운 사용 권한",
+            "p1": "Taptiva는 마우스, 키보드 및 기타 지원되는 시스템 제어 기능과 상호작용하는 등 Mac에서 원격 제어 작업을 수행하기 위해 macOS의 손쉬운 사용 권한이 필요합니다.",
+            "p2": "이 권한은 macOS에서 관리되며 시스템 설정 → 개인정보 보호 및 보안 → 손쉬운 사용에서 언제든지 취소할 수 있습니다."
+        },
+
+        "thirdParty": {
+            "title": "제3자 서비스",
+            "p1": "저희 웹사이트는 Google LLC가 제공하는 웹 분석 서비스인 Google Analytics를 사용합니다.",
+            "p2": "Google Analytics는 웹사이트 사용량을 측정하고 방문자가 Taptiva 웹사이트와 어떻게 상호작용하는지 이해하기 위해 사용됩니다. 본 개인정보 처리방침에서 해당 사용을 명시하도록 업데이트하지 않는 한 Google Analytics를 광고 또는 리마케팅 목적으로 사용하지 않습니다.",
+            "p3": "Google Analytics는 측정 서비스를 제공하기 위해 쿠키 및 기타 식별자를 사용할 수 있습니다. 이러한 기술의 사용에는 방문자의 위치에 따라 관련 법적 요건 및 동의 의무가 적용될 수 있습니다.",
+            "p4": "Taptiva는 이 웹사이트에서 제3자 광고 서비스를 사용하지 않습니다."
+        },
+
+        "children": {
+            "title": "아동의 개인정보 보호",
+            "description": "Taptiva는 아동 또는 기타 사용자로부터 개인정보를 고의로 수집하지 않습니다."
+        },
+
+        "changes": {
+            "title": "본 정책의 변경",
+            "description": "당사는 수시로 본 개인정보 처리방침을 업데이트할 수 있습니다. 변경 사항은 업데이트된 시행일과 함께 이 페이지에 게시됩니다."
+        },
+
+        "contact": {
+            "title": "문의",
+            "description": "본 개인정보 처리방침 또는 Taptiva에 대해 궁금한 점이 있으시면 다음 이메일 주소로 문의해 주세요:"
+        },
+
+        "updated": "시행일: 2026년 8월 27일"
+    }
+}

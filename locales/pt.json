@@ -1,0 +1,165 @@
+{
+    "nav": {
+        "home": "Início",
+        "features": "Recursos",
+        "support": "Suporte",
+        "privacy": "Privacidade"
+    },
+
+    "hero": {
+        "eyebrow": "Taptiva 1.0 · Grátis para Mac",
+        "title": "Taptiva",
+        "subtitle": "Seu telefone. Seu Mac. Totalmente conectados.",
+        "description": "Transforme seu iPhone ou telefone Android em um poderoso controle remoto para o seu Mac, com gestos de trackpad, teclado, controles de música e troca de aplicativos.",
+        "download": "↓ Baixar Taptiva 1.0",
+        "discover": "Descobrir o Taptiva",
+        "free": "Grátis · Nenhuma conta necessária · macOS",
+        "enjoy": "Está gostando do Taptiva?",
+        "support": "☕ Apoiar o Taptiva"
+    },
+
+    "features": {
+        "title": "Tudo o que você precisa.",
+        "subtitle": "Uma maneira simples e poderosa de controlar seu Mac pelo telefone.",
+
+        "trackpad": {
+            "title": "Trackpad",
+            "description": "Controle seu Mac com gestos de toque suaves. Mova o cursor, clique, role e navegue naturalmente."
+        },
+
+        "keyboard": {
+            "title": "Teclado",
+            "description": "Digite diretamente pelo telefone usando um teclado remoto completo desenvolvido para o seu Mac."
+        },
+
+        "music": {
+            "title": "Controles de música",
+            "description": "Controle sua música sem sair da mesa. Reproduza, pause, troque de faixa e controle a reprodução."
+        },
+
+        "apps": {
+            "title": "Troca de aplicativos",
+            "description": "Alterne rapidamente entre os aplicativos do Mac diretamente pelo telefone."
+        }
+    },
+
+    "device": {
+        "title": "Seu telefone se transforma em um controle remoto.",
+        "description": "Conecte seu telefone diretamente ao Mac e controle-o de qualquer lugar da sua rede local.",
+        "icon": "⌁"
+    },
+
+    "privacy": {
+        "title": "Privacidade desde o início.",
+        "description": "O Taptiva cria uma conexão direta entre seu telefone e seu Mac. Nenhuma conta, assinatura ou serviço de nuvem é necessário.",
+        "learnMore": "Saiba mais sobre privacidade"
+    },
+
+    "support": {
+        "title": "Apoie o Taptiva",
+        "description": "O Taptiva é gratuito e desenvolvido de forma independente. Se você considera o aplicativo útil, considere apoiar seu desenvolvimento.",
+        "button": "☕ Apoiar o Taptiva"
+    },
+
+    "footer": {
+        "rights": "Todos os direitos reservados."
+    },
+
+    "supportPage": {
+        "metaTitle": "Suporte do Taptiva",
+
+        "title": "Suporte do Taptiva",
+
+        "subtitle": "Controle remoto por toque para Mac. Rápido, privado e conectado diretamente ao seu telefone.",
+
+        "connection": {
+            "title": "Como conectar",
+            "description": "Abra o Taptiva no seu Mac e escaneie o código QR com seu iPhone ou telefone Android. Seu telefone será conectado diretamente ao Mac."
+        },
+
+        "accessibility": {
+            "title": "Acessibilidade",
+            "description": "O Taptiva requer permissão de Acessibilidade para controlar seu Mac. Abra os Ajustes do Sistema, depois Privacidade e Segurança → Acessibilidade e ative o Taptiva."
+        },
+
+        "connectionProblems": {
+            "title": "Problemas de conexão",
+            "description": "Certifique-se de que seu Mac e seu telefone estejam conectados à mesma rede Wi-Fi. Se necessário, conecte novamente escaneando o código QR."
+        },
+
+        "privacy": {
+            "title": "Privacidade",
+            "description": "O Taptiva usa uma conexão direta entre seu telefone e seu Mac. Nenhuma conta na nuvem é necessária."
+        },
+
+        "support": {
+            "title": "Está gostando do Taptiva?",
+            "description": "O Taptiva é gratuito e desenvolvido de forma independente. Se você considera o aplicativo útil, considere apoiar seu desenvolvimento.",
+            "button": "☕ Apoiar o Taptiva"
+        },
+
+        "help": {
+            "title": "Precisa de ajuda?",
+            "description": "Se você tiver algum problema com o Taptiva, estamos aqui para ajudar."
+        }
+    },
+
+    "privacyPage": {
+        "metaTitle": "Política de Privacidade do Taptiva",
+
+        "title": "Política de Privacidade",
+
+        "subtitle": "Sua privacidade é importante.",
+
+        "overview": {
+            "title": "Visão geral",
+            "p1": "O Taptiva é um aplicativo de controle remoto por toque para Mac. Ele permite que os usuários controlem o Mac usando um iPhone ou dispositivo Android por meio de uma rede local.",
+            "p2": "O Taptiva foi desenvolvido para funcionar sem exigir uma conta, serviço de nuvem ou assinatura."
+        },
+
+        "dataCollection": {
+            "title": "Coleta de dados",
+            "p1": "O aplicativo Taptiva não coleta, armazena ou vende informações pessoais. Uma conta ou serviço de nuvem não é necessário para utilizar os principais recursos do Taptiva.",
+            "p2": "Nosso site utiliza o Google Analytics para entender como os visitantes utilizam o site e nos ajudar a melhorar seu conteúdo e seus recursos.",
+            "p3": "O Google Analytics pode coletar informações como localização geográfica aproximada, informações sobre o navegador e o dispositivo, estatísticas de sessão e interações com o site. O Google Analytics também pode utilizar cookies próprios, incluindo o cookie _ga, para distinguir usuários e sessões.",
+            "p4": "Não enviamos intencionalmente ao Google Analytics informações que permitam identificar pessoalmente os usuários."
+        },
+
+        "localNetwork": {
+            "title": "Comunicação pela rede local",
+            "p1": "O Taptiva se comunica diretamente entre seu Mac e seu dispositivo móvel por meio da rede local.",
+            "p2": "As informações trocadas durante essa conexão são utilizadas exclusivamente para fornecer os recursos de controle remoto do aplicativo."
+        },
+
+        "accessibility": {
+            "title": "Permissão de Acessibilidade",
+            "p1": "O Taptiva requer a permissão de Acessibilidade do macOS para executar ações de controle remoto no Mac, como interagir com o mouse, teclado e outros controles do sistema compatíveis.",
+            "p2": "Essa permissão é gerenciada pelo macOS e pode ser revogada a qualquer momento em Ajustes do Sistema → Privacidade e Segurança → Acessibilidade."
+        },
+
+        "thirdParty": {
+            "title": "Serviços de terceiros",
+            "p1": "Nosso site utiliza o Google Analytics, um serviço de análise da web fornecido pela Google LLC.",
+            "p2": "O Google Analytics é utilizado para medir o uso do site e entender como os visitantes interagem com o site do Taptiva. Não utilizamos o Google Analytics para publicidade ou remarketing, a menos que esta Política de Privacidade seja atualizada para refletir esse uso.",
+            "p3": "O Google Analytics pode utilizar cookies e outros identificadores para fornecer seus serviços de medição. O uso dessas tecnologias pode estar sujeito aos requisitos legais e às obrigações de consentimento aplicáveis dependendo da localização do visitante.",
+            "p4": "O Taptiva não utiliza serviços de publicidade de terceiros neste site."
+        },
+
+        "children": {
+            "title": "Privacidade de crianças",
+            "description": "O Taptiva não coleta conscientemente informações pessoais de crianças ou de outros usuários."
+        },
+
+        "changes": {
+            "title": "Alterações nesta política",
+            "description": "Podemos atualizar esta Política de Privacidade periodicamente. Quaisquer alterações serão publicadas nesta página com uma data de vigência atualizada."
+        },
+
+        "contact": {
+            "title": "Contato",
+            "description": "Se você tiver dúvidas sobre esta Política de Privacidade ou sobre o Taptiva, entre em contato conosco pelo seguinte endereço:"
+        },
+
+        "updated": "Data de vigência: 27 de agosto de 2026"
+    }
+}

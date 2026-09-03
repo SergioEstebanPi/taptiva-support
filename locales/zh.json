@@ -1,0 +1,165 @@
+{
+    "nav": {
+        "home": "首页",
+        "features": "功能",
+        "support": "支持",
+        "privacy": "隐私"
+    },
+
+    "hero": {
+        "eyebrow": "Taptiva 1.0 · Mac 免费使用",
+        "title": "Taptiva",
+        "subtitle": "你的手机。你的 Mac。无缝连接。",
+        "description": "将你的 iPhone 或 Android 手机变成强大的 Mac 遥控器，支持触控板手势、键盘、音乐控制和应用切换。",
+        "download": "↓ 下载 Taptiva 1.0",
+        "discover": "探索 Taptiva",
+        "free": "免费 · 无需账户 · macOS",
+        "enjoy": "喜欢 Taptiva 吗？",
+        "support": "☕ 支持 Taptiva"
+    },
+
+    "features": {
+        "title": "你需要的一切。",
+        "subtitle": "通过手机简单而强大地控制你的 Mac。",
+
+        "trackpad": {
+            "title": "触控板",
+            "description": "通过流畅的触控手势控制 Mac。移动光标、点击、滚动，并自然地进行导航。"
+        },
+
+        "keyboard": {
+            "title": "键盘",
+            "description": "使用专为 Mac 设计的完整远程键盘，直接从手机输入文字。"
+        },
+
+        "music": {
+            "title": "音乐控制",
+            "description": "无需离开桌面即可控制音乐。播放、暂停、切换歌曲并控制播放。"
+        },
+
+        "apps": {
+            "title": "应用切换",
+            "description": "直接通过手机快速切换 Mac 上的应用程序。"
+        }
+    },
+
+    "device": {
+        "title": "让你的手机变成遥控器。",
+        "description": "将手机直接连接到 Mac，并从本地网络中的任何位置控制你的 Mac。",
+        "icon": "⌁"
+    },
+
+    "privacy": {
+        "title": "从设计之初就注重隐私。",
+        "description": "Taptiva 在你的手机和 Mac 之间建立直接连接。无需账户、订阅或云服务。",
+        "learnMore": "进一步了解隐私"
+    },
+
+    "support": {
+        "title": "支持 Taptiva",
+        "description": "Taptiva 免费提供，并由独立开发者开发。如果你觉得它很有用，可以考虑支持它的开发。",
+        "button": "☕ 支持 Taptiva"
+    },
+
+    "footer": {
+        "rights": "版权所有。"
+    },
+
+    "supportPage": {
+        "metaTitle": "Taptiva 支持",
+
+        "title": "Taptiva 支持",
+
+        "subtitle": "Mac 远程触控。快速、私密，并与你的手机直接连接。",
+
+        "connection": {
+            "title": "如何连接",
+            "description": "在 Mac 上打开 Taptiva，然后使用 iPhone 或 Android 手机扫描二维码。你的手机将直接连接到 Mac。"
+        },
+
+        "accessibility": {
+            "title": "辅助功能",
+            "description": "Taptiva 需要辅助功能权限才能控制你的 Mac。打开“系统设置”，然后进入“隐私与安全性”→“辅助功能”，启用 Taptiva。"
+        },
+
+        "connectionProblems": {
+            "title": "连接问题",
+            "description": "请确保你的 Mac 和手机连接到同一个 Wi-Fi 网络。如有需要，请重新扫描二维码以重新建立连接。"
+        },
+
+        "privacy": {
+            "title": "隐私",
+            "description": "Taptiva 使用手机与 Mac 之间的直接连接。无需云端账户。"
+        },
+
+        "support": {
+            "title": "喜欢 Taptiva 吗？",
+            "description": "Taptiva 免费提供，并由独立开发者开发。如果你觉得它很有用，可以考虑支持它的开发。",
+            "button": "☕ 支持 Taptiva"
+        },
+
+        "help": {
+            "title": "需要帮助吗？",
+            "description": "如果你在使用 Taptiva 时遇到问题，我们很乐意帮助你。"
+        }
+    },
+
+    "privacyPage": {
+        "metaTitle": "Taptiva 隐私政策",
+
+        "title": "隐私政策",
+
+        "subtitle": "你的隐私对我们很重要。",
+
+        "overview": {
+            "title": "概述",
+            "p1": "Taptiva 是一款适用于 Mac 的远程触控控制应用程序。用户可以通过本地网络使用 iPhone 或 Android 设备控制 Mac。",
+            "p2": "Taptiva 的设计无需账户、云服务或订阅即可运行。"
+        },
+
+        "dataCollection": {
+            "title": "数据收集",
+            "p1": "Taptiva 应用本身不会收集、存储或出售个人信息。使用 Taptiva 的主要功能无需账户或云服务。",
+            "p2": "我们的网站使用 Google Analytics 来了解访客如何使用网站，并帮助我们改进网站的内容和功能。",
+            "p3": "Google Analytics 可能会收集大致的地理位置、浏览器和设备信息、会话统计数据以及与网站的互动信息。Google Analytics 还可能使用第一方 Cookie（包括 _ga Cookie）来区分用户和会话。",
+            "p4": "我们不会有意向 Google Analytics 发送能够直接识别用户个人身份的信息。"
+        },
+
+        "localNetwork": {
+            "title": "本地网络通信",
+            "p1": "Taptiva 通过本地网络在你的 Mac 和移动设备之间进行直接通信。",
+            "p2": "连接过程中交换的信息仅用于提供应用程序的远程控制功能。"
+        },
+
+        "accessibility": {
+            "title": "辅助功能权限",
+            "p1": "Taptiva 需要 macOS 的辅助功能权限，以便在 Mac 上执行远程控制操作，例如与鼠标、键盘和其他受支持的系统控制功能进行交互。",
+            "p2": "此权限由 macOS 管理，你可以随时前往“系统设置”→“隐私与安全性”→“辅助功能”撤销该权限。"
+        },
+
+        "thirdParty": {
+            "title": "第三方服务",
+            "p1": "我们的网站使用由 Google LLC 提供的网络分析服务 Google Analytics。",
+            "p2": "Google Analytics 用于衡量网站的使用情况，并了解访客如何与 Taptiva 网站互动。除非我们更新本隐私政策明确说明，否则我们不会将 Google Analytics 用于广告或再营销目的。",
+            "p3": "Google Analytics 可能会使用 Cookie 和其他标识符来提供其分析服务。根据访客所在地区，这些技术的使用可能受到适用法律要求和同意义务的约束。",
+            "p4": "Taptiva 不在本网站上使用第三方广告服务。"
+        },
+
+        "children": {
+            "title": "儿童隐私",
+            "description": "Taptiva 不会在明知的情况下收集儿童或其他用户的个人信息。"
+        },
+
+        "changes": {
+            "title": "政策变更",
+            "description": "我们可能会不时更新本隐私政策。任何更改都会在本页面公布，并显示更新后的生效日期。"
+        },
+
+        "contact": {
+            "title": "联系我们",
+            "description": "如果你对本隐私政策或 Taptiva 有任何疑问，可以通过以下邮箱联系我们："
+        },
+
+        "updated": "生效日期：2026年8月27日"
+    }
+}

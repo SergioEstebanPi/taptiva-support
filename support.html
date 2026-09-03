@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KWKJR2DSM7"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'G-KWKJR2DSM7');
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-KWKJR2DSM7');
     </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Taptiva Support</title>
+    <title data-i18n="supportPage.metaTitle">
+        Taptiva Support
+    </title>
 
     <style>
+
         :root {
             --bg: #000;
             --card: rgba(28, 28, 30, 0.72);
@@ -32,6 +42,7 @@
 
         body {
             margin: 0;
+
             background:
                 radial-gradient(
                     circle at 50% -10%,
@@ -39,7 +50,9 @@
                     #050507 35%,
                     #000 70%
                 );
+
             color: var(--text);
+
             font-family:
                 -apple-system,
                 BlinkMacSystemFont,
@@ -48,22 +61,34 @@
                 Helvetica,
                 Arial,
                 sans-serif;
+
             min-height: 100vh;
         }
 
+
+        /* NAV */
+
         header {
             padding: 24px 7%;
-            border-bottom: 1px solid rgba(255,255,255,.06);
+
+            border-bottom:
+                1px solid rgba(255,255,255,.06);
+
             backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+
             position: sticky;
             top: 0;
+
             background: rgba(0,0,0,.65);
+
             z-index: 10;
         }
 
         .nav {
             max-width: 1100px;
             margin: auto;
+
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -76,9 +101,19 @@
 
             color: var(--text);
             text-decoration: none;
+
             display: flex;
             align-items: center;
-            text-decoration: none;
+        }
+
+        .logo img {
+            margin-right: 8px;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 20px;
         }
 
         .nav a {
@@ -91,11 +126,55 @@
             color: white;
         }
 
+
+        /* LANGUAGE */
+
+        .language-selector {
+            appearance: none;
+            -webkit-appearance: none;
+
+            padding: 7px 12px;
+
+            color: #f5f5f7;
+
+            background:
+                rgba(255,255,255,.06);
+
+            border:
+                1px solid rgba(255,255,255,.10);
+
+            border-radius: 999px;
+
+            font-size: 13px;
+
+            cursor: pointer;
+
+            outline: none;
+        }
+
+        .language-selector:hover {
+            background:
+                rgba(255,255,255,.10);
+        }
+
+        .language-selector option {
+            background: #111;
+            color: white;
+        }
+
+
+        /* MAIN */
+
         main {
             max-width: 900px;
             margin: auto;
-            padding: 100px 24px 80px;
+
+            padding:
+                100px 24px 80px;
         }
+
+
+        /* HERO */
 
         .hero {
             text-align: center;
@@ -103,86 +182,148 @@
         }
 
         .hero h1 {
-            font-size: clamp(48px, 8vw, 80px);
+            font-size:
+                clamp(48px, 8vw, 80px);
+
             letter-spacing: -4px;
+
             margin: 0;
+
             font-weight: 700;
-            background: linear-gradient(
-                180deg,
-                #fff,
-                #b7b7bc
-            );
+
+            background:
+                linear-gradient(
+                    180deg,
+                    #fff,
+                    #b7b7bc
+                );
+
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         .hero p {
             color: var(--secondary);
+
             font-size: 21px;
+
             line-height: 1.5;
+
             max-width: 600px;
-            margin: 20px auto 0;
+
+            margin:
+                20px auto 0;
         }
+
+
+        /* GRID */
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
             gap: 18px;
         }
 
+
+        /* CARD */
+
         .card {
             background: var(--card);
-            border: 1px solid var(--border);
+
+            border:
+                1px solid var(--border);
+
             border-radius: 24px;
+
             padding: 30px;
+
             backdrop-filter: blur(25px);
             -webkit-backdrop-filter: blur(25px);
-            transition: transform .2s ease,
-                        border-color .2s ease;
+
+            transition:
+                transform .2s ease,
+                border-color .2s ease;
         }
 
         .card:hover {
-            transform: translateY(-3px);
-            border-color: rgba(255,255,255,.2);
+            transform:
+                translateY(-3px);
+
+            border-color:
+                rgba(255,255,255,.2);
         }
+
+
+        /* ICON */
 
         .icon {
             width: 42px;
             height: 42px;
+
             border-radius: 12px;
+
             display: flex;
+
             align-items: center;
             justify-content: center;
-            background: rgba(41,151,255,.14);
+
+            background:
+                rgba(41,151,255,.14);
+
             color: var(--blue);
+
             font-size: 20px;
+
             margin-bottom: 20px;
         }
 
+
+        /* CARD TEXT */
+
         h2 {
             font-size: 21px;
-            margin: 0 0 10px;
+
+            margin:
+                0 0 10px;
+
             letter-spacing: -.4px;
         }
 
         .card p {
             color: var(--secondary);
+
             line-height: 1.6;
+
             margin: 0;
+
             font-size: 15px;
         }
 
+
+        /* CONTACT */
+
         .contact {
             margin-top: 18px;
+
             text-align: center;
-            padding: 45px 30px;
+
+            padding:
+                45px 30px;
+
             border-radius: 24px;
-            border: 1px solid var(--border);
-            background: linear-gradient(
-                135deg,
-                rgba(41,151,255,.10),
-                rgba(255,255,255,.03)
-            );
+
+            border:
+                1px solid var(--border);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(41,151,255,.10),
+                    rgba(255,255,255,.03)
+                );
         }
 
         .contact p {
@@ -191,9 +332,13 @@
 
         .contact a {
             display: inline-block;
+
             margin-top: 10px;
+
             color: var(--blue);
+
             text-decoration: none;
+
             font-size: 17px;
         }
 
@@ -201,34 +346,45 @@
             text-decoration: underline;
         }
 
-        footer {
-            text-align: center;
-            padding: 40px 20px;
-            color: #666;
-            font-size: 13px;
-        }
+
+        /* KO-FI */
 
         .ko-fi-button {
             display: inline-flex;
+
             align-items: center;
             justify-content: center;
+
             gap: 8px;
 
             margin-top: 18px;
-            padding: 12px 22px;
+
+            padding:
+                12px 22px;
 
             color: #fff !important;
-            background: linear-gradient(135deg, #ff5f5f, #ff8a5b);
 
-            border: 1px solid rgba(255,255,255,.15);
+            background:
+                linear-gradient(
+                    135deg,
+                    #ff5f5f,
+                    #ff8a5b
+                );
+
+            border:
+                1px solid rgba(255,255,255,.15);
+
             border-radius: 999px;
 
             text-decoration: none !important;
+
             font-size: 15px !important;
+
             font-weight: 600;
 
             box-shadow:
-                0 8px 24px rgba(255, 95, 95, .20);
+                0 8px 24px
+                rgba(255,95,95,.20);
 
             transition:
                 transform .2s ease,
@@ -238,19 +394,42 @@
 
         .ko-fi-button:hover {
             color: #fff !important;
-            transform: translateY(-2px);
-            filter: brightness(1.08);
+
+            transform:
+                translateY(-2px);
+
+            filter:
+                brightness(1.08);
 
             box-shadow:
-                0 12px 32px rgba(255, 95, 95, .32);
+                0 12px 32px
+                rgba(255,95,95,.32);
         }
 
         .ko-fi-button:active {
-            transform: translateY(0);
+            transform:
+                translateY(0);
         }
 
 
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+
+            padding:
+                40px 20px;
+
+            color: #666;
+
+            font-size: 13px;
+        }
+
+
+        /* MOBILE */
+
         @media (max-width: 650px) {
+
             main {
                 padding-top: 70px;
             }
@@ -266,119 +445,267 @@
             .hero p {
                 font-size: 18px;
             }
+
+            .nav-actions {
+                gap: 12px;
+            }
+
+            .nav a {
+                font-size: 13px;
+            }
+
         }
+
     </style>
+
 </head>
 
+
 <body>
+
+
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4Q5DTLF"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<noscript>
+
+    <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-M4Q5DTLF"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden">
+    </iframe>
+
+</noscript>
+
 <!-- End Google Tag Manager (noscript) -->
 
+
+<!-- NAV -->
+
 <header>
+
     <div class="nav">
-        <a href="index.html" class="logo">
-            <img src="img/logo.png" alt="Taptiva">Taptiva
+
+        <a
+            href="index.html"
+            class="logo">
+
+            <img
+                src="img/logo.png"
+                alt="Taptiva">
+
+            Taptiva
+
         </a>
-        <a href="mailto:support@taptiva.tech">Contact</a>
+
+
+        <div class="nav-actions">
+
+            <select
+                id="languageSelector"
+                class="language-selector">
+
+                <option value="en">🇺🇸 EN</option>
+                <option value="es">🇪🇸 ES</option>
+                <option value="fr">🇫🇷 FR</option>
+                <option value="de">🇩🇪 DE</option>
+                <option value="it">🇮🇹 IT</option>
+                <option value="pt">🇵🇹 PT</option>
+                <option value="ja">🇯🇵 JA</option>
+                <option value="ko">🇰🇷 KO</option>
+                <option value="zh">🇨🇳 ZH</option>
+
+            </select>
+
+            <a href="index.html" data-i18n="nav.home">
+                Home
+            </a>
+        </div>
+
     </div>
+
 </header>
+
+
+<!-- MAIN -->
 
 <main>
 
+
+    <!-- HERO -->
+
     <section class="hero">
-        <h1>Taptiva</h1>
-        <p>
+
+        <h1 data-i18n="supportPage.title">
+            Taptiva Support
+        </h1>
+
+        <p data-i18n="supportPage.subtitle">
             Remote Touch Control for Mac.
             Fast, private, and directly connected to your phone.
         </p>
+
     </section>
+
+
+    <!-- SUPPORT CARDS -->
 
     <section class="grid">
 
+
         <article class="card">
-            <div class="icon">⌁</div>
-            <h2>How to connect</h2>
-            <p>
+
+            <div class="icon">
+                ⌁
+            </div>
+
+            <h2 data-i18n="supportPage.connection.title">
+                How to connect
+            </h2>
+
+            <p data-i18n="supportPage.connection.description">
                 Open Taptiva on your Mac and scan the QR code
                 with your iPhone or Android phone.
                 Your phone connects directly to your Mac.
             </p>
+
         </article>
 
+
         <article class="card">
-            <div class="icon">⌨</div>
-            <h2>Accessibility</h2>
-            <p>
+
+            <div class="icon">
+                ⌨
+            </div>
+
+            <h2 data-i18n="supportPage.accessibility.title">
+                Accessibility
+            </h2>
+
+            <p data-i18n="supportPage.accessibility.description">
                 Taptiva requires Accessibility permission
                 to control your Mac. Open System Settings,
                 then Privacy &amp; Security → Accessibility,
                 and enable Taptiva.
             </p>
+
         </article>
 
+
         <article class="card">
-            <div class="icon">◉</div>
-            <h2>Connection problems</h2>
-            <p>
+
+            <div class="icon">
+                ◉
+            </div>
+
+            <h2 data-i18n="supportPage.connectionProblems.title">
+                Connection problems
+            </h2>
+
+            <p data-i18n="supportPage.connectionProblems.description">
                 Make sure your Mac and phone are connected
                 to the same Wi-Fi network. If necessary,
                 reconnect by scanning the QR code again.
             </p>
+
         </article>
 
+
         <article class="card">
-            <div class="icon">↗</div>
-            <h2>Privacy</h2>
-            <p>
+
+            <div class="icon">
+                ↗
+            </div>
+
+            <h2 data-i18n="supportPage.privacy.title">
+                Privacy
+            </h2>
+
+            <p data-i18n="supportPage.privacy.description">
                 Taptiva uses a direct connection between
                 your phone and Mac. No cloud account is
                 required.
             </p>
+
         </article>
+
 
     </section>
 
-    <section class="contact">
-        <h2>Enjoying Taptiva?</h2>
 
-        <p>
+    <!-- CONTACT -->
+
+    <section class="contact">
+
+
+        <h2 data-i18n="supportPage.support.title">
+            Enjoying Taptiva?
+        </h2>
+
+        <p data-i18n="supportPage.support.description">
             Taptiva is free and independently developed.
-            If you find it useful, consider supporting its development.
+            If you find it useful, consider supporting
+            its development.
         </p>
+
 
         <a
             href="https://ko-fi.com/taptiva"
             target="_blank"
             class="ko-fi-button"
             rel="noopener noreferrer"
-            onclick="gtag('event', 'ko_fi_click');">
+            onclick="gtag('event', 'ko_fi_click');"
+            data-i18n="supportPage.support.button">
+
             ☕ Support Taptiva
+
         </a>
 
 
         <br><br>
 
-        <h2>Need help?</h2>
 
-        <p>
+        <h2 data-i18n="supportPage.help.title">
+            Need help?
+        </h2>
+
+        <p data-i18n="supportPage.help.description">
             If you have a problem with Taptiva,
             we're here to help.
         </p>
 
-        <a href="mailto:support@taptiva.tech">
+
+        <a
+            href="mailto:support@taptiva.tech">
+
             support@taptiva.tech
+
         </a>
 
 
     </section>
 
+
 </main>
 
+
+<!-- FOOTER -->
+
 <footer>
-    © 2026 Taptiva. All rights reserved.
+
+    © 2026 Taptiva.
+    <span data-i18n="footer.rights">
+        All rights reserved.
+    </span>
+
 </footer>
 
+
+<!-- TRANSLATIONS -->
+
+<script src="js/i18n.js"></script>
+
+
 </body>
+
 </html>

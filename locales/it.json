@@ -1,0 +1,165 @@
+{
+    "nav": {
+        "home": "Home",
+        "features": "Funzionalità",
+        "support": "Supporto",
+        "privacy": "Privacy"
+    },
+
+    "hero": {
+        "eyebrow": "Taptiva 1.0 · Gratis per Mac",
+        "title": "Taptiva",
+        "subtitle": "Il tuo telefono. Il tuo Mac. Completamente connessi.",
+        "description": "Trasforma il tuo iPhone o smartphone Android in un potente telecomando per il tuo Mac, con gesti del trackpad, tastiera, controlli musicali e cambio delle app.",
+        "download": "↓ Scarica Taptiva 1.0",
+        "discover": "Scopri Taptiva",
+        "free": "Gratis · Nessun account richiesto · macOS",
+        "enjoy": "Ti piace Taptiva?",
+        "support": "☕ Supporta Taptiva"
+    },
+
+    "features": {
+        "title": "Tutto ciò di cui hai bisogno.",
+        "subtitle": "Un modo semplice e potente per controllare il tuo Mac dal tuo telefono.",
+
+        "trackpad": {
+            "title": "Trackpad",
+            "description": "Controlla il tuo Mac con gesti touch fluidi. Sposta il cursore, fai clic, scorri e naviga in modo naturale."
+        },
+
+        "keyboard": {
+            "title": "Tastiera",
+            "description": "Scrivi direttamente dal tuo telefono utilizzando una tastiera remota completa progettata per il tuo Mac."
+        },
+
+        "music": {
+            "title": "Controlli musicali",
+            "description": "Controlla la tua musica senza lasciare la scrivania. Riproduci, metti in pausa, cambia brano e gestisci la riproduzione."
+        },
+
+        "apps": {
+            "title": "Cambio delle app",
+            "description": "Passa rapidamente da un'applicazione all'altra sul tuo Mac direttamente dal tuo telefono."
+        }
+    },
+
+    "device": {
+        "title": "Il tuo telefono diventa un telecomando.",
+        "description": "Collega il tuo telefono direttamente al Mac e controllalo da qualsiasi punto della tua rete locale.",
+        "icon": "⌁"
+    },
+
+    "privacy": {
+        "title": "Privacy fin dalla progettazione.",
+        "description": "Taptiva crea una connessione diretta tra il tuo telefono e il Mac. Non sono richiesti account, abbonamenti o servizi cloud.",
+        "learnMore": "Scopri di più sulla privacy"
+    },
+
+    "support": {
+        "title": "Supporta Taptiva",
+        "description": "Taptiva è gratuita e sviluppata in modo indipendente. Se la trovi utile, considera di sostenere il suo sviluppo.",
+        "button": "☕ Supporta Taptiva"
+    },
+
+    "footer": {
+        "rights": "Tutti i diritti riservati."
+    },
+
+    "supportPage": {
+        "metaTitle": "Supporto Taptiva",
+
+        "title": "Supporto Taptiva",
+
+        "subtitle": "Controllo touch remoto per Mac. Veloce, privato e collegato direttamente al tuo telefono.",
+
+        "connection": {
+            "title": "Come connettersi",
+            "description": "Apri Taptiva sul tuo Mac e scansiona il codice QR con il tuo iPhone o smartphone Android. Il tuo telefono si collega direttamente al Mac."
+        },
+
+        "accessibility": {
+            "title": "Accessibilità",
+            "description": "Taptiva richiede l'autorizzazione Accessibilità per controllare il tuo Mac. Apri Impostazioni di Sistema, quindi Privacy e Sicurezza → Accessibilità e abilita Taptiva."
+        },
+
+        "connectionProblems": {
+            "title": "Problemi di connessione",
+            "description": "Assicurati che il Mac e il telefono siano collegati alla stessa rete Wi-Fi. Se necessario, ristabilisci la connessione scansionando nuovamente il codice QR."
+        },
+
+        "privacy": {
+            "title": "Privacy",
+            "description": "Taptiva utilizza una connessione diretta tra il tuo telefono e il Mac. Non è richiesto alcun account cloud."
+        },
+
+        "support": {
+            "title": "Ti piace Taptiva?",
+            "description": "Taptiva è gratuita e sviluppata in modo indipendente. Se la trovi utile, considera di sostenere il suo sviluppo.",
+            "button": "☕ Supporta Taptiva"
+        },
+
+        "help": {
+            "title": "Hai bisogno di aiuto?",
+            "description": "Se hai un problema con Taptiva, siamo qui per aiutarti."
+        }
+    },
+
+    "privacyPage": {
+        "metaTitle": "Informativa sulla privacy di Taptiva",
+
+        "title": "Informativa sulla privacy",
+
+        "subtitle": "La tua privacy è importante.",
+
+        "overview": {
+            "title": "Panoramica",
+            "p1": "Taptiva è un'applicazione di controllo touch remoto per Mac. Consente agli utenti di controllare il proprio Mac utilizzando un iPhone o un dispositivo Android tramite una rete locale.",
+            "p2": "Taptiva è progettata per funzionare senza richiedere un account, un servizio cloud o un abbonamento."
+        },
+
+        "dataCollection": {
+            "title": "Raccolta dei dati",
+            "p1": "Taptiva non raccoglie, memorizza o vende informazioni personali tramite l'applicazione. L'app Taptiva non richiede un account o un servizio cloud per fornire le sue funzionalità principali.",
+            "p2": "Il nostro sito web utilizza Google Analytics per capire come i visitatori utilizzano il sito e per aiutarci a migliorarne i contenuti e le funzionalità.",
+            "p3": "Google Analytics può raccogliere informazioni quali la posizione geografica approssimativa, informazioni sul browser e sul dispositivo, statistiche delle sessioni e interazioni con il sito web. Google Analytics può inoltre utilizzare cookie proprietari, incluso il cookie _ga, per distinguere gli utenti e le sessioni.",
+            "p4": "Non inviamo intenzionalmente a Google Analytics informazioni che consentano di identificare personalmente gli utenti."
+        },
+
+        "localNetwork": {
+            "title": "Comunicazione tramite rete locale",
+            "p1": "Taptiva comunica direttamente tra il tuo Mac e il tuo dispositivo mobile tramite la rete locale.",
+            "p2": "Le informazioni scambiate durante questa connessione vengono utilizzate esclusivamente per fornire le funzionalità di controllo remoto dell'applicazione."
+        },
+
+        "accessibility": {
+            "title": "Autorizzazione Accessibilità",
+            "p1": "Taptiva richiede l'autorizzazione Accessibilità di macOS per eseguire azioni di controllo remoto sul tuo Mac, come interagire con il mouse, la tastiera e altri controlli di sistema supportati.",
+            "p2": "Questa autorizzazione è gestita da macOS e può essere revocata in qualsiasi momento da Impostazioni di Sistema → Privacy e Sicurezza → Accessibilità."
+        },
+
+        "thirdParty": {
+            "title": "Servizi di terze parti",
+            "p1": "Il nostro sito web utilizza Google Analytics, un servizio di analisi web fornito da Google LLC.",
+            "p2": "Google Analytics viene utilizzato per misurare l'utilizzo del sito web e comprendere come i visitatori interagiscono con il sito di Taptiva. Non utilizziamo Google Analytics per pubblicità o remarketing, a meno che questa Informativa sulla privacy non venga aggiornata per riflettere tale utilizzo.",
+            "p3": "Google Analytics può utilizzare cookie e altri identificatori per fornire i propri servizi di misurazione. L'utilizzo di queste tecnologie può essere soggetto ai requisiti legali e agli obblighi di consenso applicabili in base alla posizione del visitatore.",
+            "p4": "Taptiva non utilizza servizi pubblicitari di terze parti su questo sito web."
+        },
+
+        "children": {
+            "title": "Privacy dei minori",
+            "description": "Taptiva non raccoglie consapevolmente informazioni personali da minori o altri utenti."
+        },
+
+        "changes": {
+            "title": "Modifiche a questa informativa",
+            "description": "Potremmo aggiornare questa Informativa sulla privacy di tanto in tanto. Eventuali modifiche saranno pubblicate su questa pagina con una data di entrata in vigore aggiornata."
+        },
+
+        "contact": {
+            "title": "Contatti",
+            "description": "Se hai domande relative a questa Informativa sulla privacy o a Taptiva, puoi contattarci al seguente indirizzo:"
+        },
+
+        "updated": "Data di entrata in vigore: 27 agosto 2026"
+    }
+}

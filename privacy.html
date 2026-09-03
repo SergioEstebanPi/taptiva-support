@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KWKJR2DSM7"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'G-KWKJR2DSM7');
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-KWKJR2DSM7');
     </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Taptiva Privacy Policy</title>
+    <title data-i18n="privacyPage.metaTitle">
+        Taptiva Privacy Policy
+    </title>
 
     <style>
+
         :root {
             --bg: #000;
             --card: rgba(28, 28, 30, 0.72);
@@ -32,6 +42,7 @@
 
         body {
             margin: 0;
+
             background:
                 radial-gradient(
                     circle at 50% -10%,
@@ -39,7 +50,9 @@
                     #050507 35%,
                     #000 70%
                 );
+
             color: var(--text);
+
             font-family:
                 -apple-system,
                 BlinkMacSystemFont,
@@ -48,22 +61,33 @@
                 Helvetica,
                 Arial,
                 sans-serif;
+
             min-height: 100vh;
         }
 
+
+        /* NAV */
+
         header {
             padding: 24px 7%;
-            border-bottom: 1px solid rgba(255,255,255,.06);
+
+            border-bottom:
+                1px solid rgba(255,255,255,.06);
+
             backdrop-filter: blur(20px);
+
             position: sticky;
             top: 0;
+
             background: rgba(0,0,0,.65);
+
             z-index: 10;
         }
 
         .nav {
             max-width: 900px;
             margin: auto;
+
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -76,9 +100,19 @@
 
             color: var(--text);
             text-decoration: none;
+
             display: flex;
             align-items: center;
-            text-decoration: none;
+        }
+
+        .logo img {
+            margin-right: 8px;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 20px;
         }
 
         .nav a {
@@ -91,11 +125,51 @@
             color: white;
         }
 
+
+        /* LANGUAGE */
+
+        .language-selector {
+            appearance: none;
+            -webkit-appearance: none;
+
+            padding: 7px 12px;
+
+            color: #f5f5f7;
+            background: rgba(255,255,255,.06);
+
+            border:
+                1px solid rgba(255,255,255,.10);
+
+            border-radius: 999px;
+
+            font-size: 13px;
+
+            cursor: pointer;
+
+            outline: none;
+        }
+
+        .language-selector:hover {
+            background: rgba(255,255,255,.10);
+        }
+
+        .language-selector option {
+            background: #111;
+            color: white;
+        }
+
+
+        /* MAIN */
+
         main {
             max-width: 850px;
             margin: auto;
+
             padding: 90px 24px 80px;
         }
+
+
+        /* HERO */
 
         .hero {
             text-align: center;
@@ -104,36 +178,55 @@
 
         .hero h1 {
             font-size: clamp(42px, 7vw, 68px);
+
             letter-spacing: -3px;
+
             margin: 0;
+
             font-weight: 700;
-            background: linear-gradient(
-                180deg,
-                #fff,
-                #b7b7bc
-            );
+
+            background:
+                linear-gradient(
+                    180deg,
+                    #fff,
+                    #b7b7bc
+                );
+
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         .hero p {
             color: var(--secondary);
+
             font-size: 18px;
+
             margin-top: 16px;
         }
 
+
+        /* CONTENT */
+
         .content {
             background: var(--card);
-            border: 1px solid var(--border);
+
+            border:
+                1px solid var(--border);
+
             border-radius: 24px;
+
             padding: 40px;
+
             backdrop-filter: blur(25px);
             -webkit-backdrop-filter: blur(25px);
         }
 
         h2 {
             font-size: 22px;
-            margin: 32px 0 12px;
+
+            margin:
+                32px 0 12px;
+
             letter-spacing: -.4px;
         }
 
@@ -143,13 +236,17 @@
 
         p {
             color: var(--secondary);
+
             line-height: 1.7;
+
             font-size: 15px;
         }
 
         ul {
             color: var(--secondary);
+
             line-height: 1.8;
+
             padding-left: 22px;
         }
 
@@ -166,22 +263,40 @@
             text-decoration: underline;
         }
 
+
+        /* UPDATED */
+
         .updated {
             margin-top: 35px;
+
             padding-top: 25px;
-            border-top: 1px solid var(--border);
+
+            border-top:
+                1px solid var(--border);
+
             color: #666;
+
             font-size: 13px;
         }
+
+
+        /* FOOTER */
 
         footer {
             text-align: center;
+
             padding: 40px 20px;
+
             color: #666;
+
             font-size: 13px;
         }
 
+
+        /* MOBILE */
+
         @media (max-width: 650px) {
+
             main {
                 padding-top: 60px;
             }
@@ -189,117 +304,251 @@
             .content {
                 padding: 28px 22px;
             }
+
+            .nav-actions {
+                gap: 12px;
+            }
+
+            .nav a {
+                font-size: 13px;
+            }
+
         }
+
     </style>
+
 </head>
 
+
 <body>
+
+
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4Q5DTLF"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<noscript>
+
+    <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-M4Q5DTLF"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden">
+    </iframe>
+
+</noscript>
+
 <!-- End Google Tag Manager (noscript) -->
 
+
+<!-- NAV -->
+
 <header>
+
     <div class="nav">
-        <a href="index.html" class="logo">
-            <img src="img/logo.png" alt="Taptiva">Taptiva
+
+        <a
+            href="index.html"
+            class="logo">
+
+            <img
+                src="img/logo.png"
+                alt="Taptiva">
+
+            Taptiva
+
         </a>
-        <a href="index.html">Support</a>
+
+
+        <div class="nav-actions">
+
+            <select
+                id="languageSelector"
+                class="language-selector">
+
+                <option value="en">🇺🇸 EN</option>
+                <option value="es">🇪🇸 ES</option>
+                <option value="fr">🇫🇷 FR</option>
+                <option value="de">🇩🇪 DE</option>
+                <option value="it">🇮🇹 IT</option>
+                <option value="pt">🇵🇹 PT</option>
+                <option value="ja">🇯🇵 JA</option>
+                <option value="ko">🇰🇷 KO</option>
+                <option value="zh">🇨🇳 ZH</option>
+
+            </select>
+
+
+            <a
+                href="support.html"
+                data-i18n="nav.support">
+                Support
+            </a>
+
+        </div>
+
     </div>
+
 </header>
+
+
+<!-- MAIN -->
 
 <main>
 
-    <section class="hero">
-        <h1>Privacy Policy</h1>
 
-        <p>
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <h1 data-i18n="privacyPage.title">
+            Privacy Policy
+        </h1>
+
+        <p data-i18n="privacyPage.subtitle">
             Your privacy matters.
         </p>
+
     </section>
+
+
+    <!-- PRIVACY CONTENT -->
 
     <section class="content">
 
-        <h2>Overview</h2>
 
-        <p>
+        <h2 data-i18n="privacyPage.overview.title">
+            Overview
+        </h2>
+
+        <p data-i18n="privacyPage.overview.p1">
             Taptiva is a remote touch control application for Mac.
             It allows users to control their Mac using an iPhone or
             Android device over a local network.
         </p>
 
-        <p>
+        <p data-i18n="privacyPage.overview.p2">
             Taptiva is designed to work without requiring an account,
             cloud service, or subscription.
         </p>
 
 
-        <h2>Data Collection</h2>
+        <h2 data-i18n="privacyPage.dataCollection.title">
+            Data Collection
+        </h2>
 
-        <p>
-            Taptiva does not collect, store, or sell personal information.
-            We do not operate a cloud service that receives or stores
-            the information exchanged between your devices.
+        <p data-i18n="privacyPage.dataCollection.p1">
+            Taptiva itself does not collect, store, or sell personal
+            information through the application. The Taptiva app does
+            not require an account or cloud service to provide its core
+            functionality.
+        </p>
+
+        <p data-i18n="privacyPage.dataCollection.p2">
+            Our website uses Google Analytics to understand how visitors
+            use the website and to help us improve its content and
+            functionality.
+        </p>
+
+        <p data-i18n="privacyPage.dataCollection.p3">
+            Google Analytics may collect information such as approximate
+            geographic location, browser and device information, session
+            statistics, and interactions with the website. Google
+            Analytics may also use first-party cookies, including the
+            _ga cookie, to distinguish users and sessions.
+        </p>
+
+        <p data-i18n="privacyPage.dataCollection.p4">
+            We do not intentionally send personally identifiable
+            information to Google Analytics.
         </p>
 
 
-        <h2>Local Network Communication</h2>
+        <h2 data-i18n="privacyPage.localNetwork.title">
+            Local Network Communication
+        </h2>
 
-        <p>
+        <p data-i18n="privacyPage.localNetwork.p1">
             Taptiva communicates directly between your Mac and your
             mobile device over your local network.
         </p>
 
-        <p>
+        <p data-i18n="privacyPage.localNetwork.p2">
             Information exchanged during this connection is used solely
             to provide the remote control functionality of the application.
         </p>
 
 
-        <h2>Accessibility Permission</h2>
+        <h2 data-i18n="privacyPage.accessibility.title">
+            Accessibility Permission
+        </h2>
 
-        <p>
+        <p data-i18n="privacyPage.accessibility.p1">
             Taptiva requires macOS Accessibility permission to perform
             remote control actions on your Mac, such as interacting with
             the mouse, keyboard, and other supported system controls.
         </p>
 
-        <p>
+        <p data-i18n="privacyPage.accessibility.p2">
             This permission is managed by macOS and can be revoked at
             any time in System Settings → Privacy &amp; Security →
             Accessibility.
         </p>
 
 
-        <h2>Third-Party Services</h2>
+        <h2 data-i18n="privacyPage.thirdParty.title">
+            Third-Party Services
+        </h2>
 
-        <p>
-            Taptiva does not use third-party advertising services,
-            analytics services, or tracking technologies to collect
-            information about users.
+        <p data-i18n="privacyPage.thirdParty.p1">
+            Our website uses Google Analytics, a web analytics service
+            provided by Google LLC.
+        </p>
+
+        <p data-i18n="privacyPage.thirdParty.p2">
+            Google Analytics is used to measure website usage and
+            understand how visitors interact with Taptiva's website.
+            We do not use Google Analytics for advertising or remarketing
+            unless this Privacy Policy is updated to reflect such use.
+        </p>
+
+        <p data-i18n="privacyPage.thirdParty.p3">
+            Google Analytics may use cookies and other identifiers to
+            provide its measurement services. The use of these technologies
+            may be subject to applicable privacy and consent requirements
+            depending on the visitor's location.
+        </p>
+
+        <p data-i18n="privacyPage.thirdParty.p4">
+            Taptiva does not use third-party advertising services on
+            this website.
         </p>
 
 
-        <h2>Children's Privacy</h2>
+        <h2 data-i18n="privacyPage.children.title">
+            Children's Privacy
+        </h2>
 
-        <p>
+        <p data-i18n="privacyPage.children.description">
             Taptiva does not knowingly collect personal information
             from children or other users.
         </p>
 
 
-        <h2>Changes to This Policy</h2>
+        <h2 data-i18n="privacyPage.changes.title">
+            Changes to This Policy
+        </h2>
 
-        <p>
+        <p data-i18n="privacyPage.changes.description">
             We may update this Privacy Policy from time to time.
             Any changes will be published on this page with an
             updated effective date.
         </p>
 
 
-        <h2>Contact</h2>
+        <h2 data-i18n="privacyPage.contact.title">
+            Contact
+        </h2>
 
-        <p>
+        <p data-i18n="privacyPage.contact.description">
             If you have questions about this Privacy Policy or
             Taptiva, please contact us at:
         </p>
@@ -311,17 +560,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </p>
 
 
-        <div class="updated">
+        <div
+            class="updated"
+            data-i18n="privacyPage.updated">
             Effective date: August 27, 2026
         </div>
+
 
     </section>
 
 </main>
 
+
 <footer>
-    © 2026 Taptiva. All rights reserved.
+
+    © 2026 Taptiva.
+    <span data-i18n="footer.rights">
+        All rights reserved.
+    </span>
+
 </footer>
+
+
+<!-- TRANSLATIONS -->
+
+<script src="js/i18n.js"></script>
 
 </body>
 </html>

@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KWKJR2DSM7"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'G-KWKJR2DSM7');
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-KWKJR2DSM7');
     </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Taptiva — Remote Touch Control for Mac</title>
-    <meta name="description"
-          content="Turn your iPhone or Android phone into a remote touch controller for your Mac. Direct connection, no cloud, no accounts.">
+
+    <meta
+        name="description"
+        content="Turn your iPhone or Android phone into a remote touch controller for your Mac. Direct connection, no cloud, no accounts."
+    >
 
     <style>
+
         :root {
             --bg: #000;
             --bg-soft: #08090c;
@@ -39,6 +49,7 @@
 
         body {
             margin: 0;
+
             background:
                 radial-gradient(
                     ellipse at 50% -20%,
@@ -46,7 +57,9 @@
                     #07090e 38%,
                     #000 72%
                 );
+
             color: var(--text);
+
             font-family:
                 -apple-system,
                 BlinkMacSystemFont,
@@ -55,10 +68,13 @@
                 Helvetica,
                 Arial,
                 sans-serif;
+
             min-height: 100vh;
         }
 
-        /* NAV */
+        /* =========================
+           NAV
+        ========================= */
 
         header {
             position: sticky;
@@ -68,7 +84,9 @@
             padding: 20px 7%;
 
             background: rgba(0,0,0,.62);
-            border-bottom: 1px solid rgba(255,255,255,.06);
+
+            border-bottom:
+                1px solid rgba(255,255,255,.06);
 
             backdrop-filter: blur(25px);
             -webkit-backdrop-filter: blur(25px);
@@ -84,71 +102,118 @@
         }
 
         .logo {
+            color: var(--text);
+            text-decoration: none;
+
             font-size: 21px;
             font-weight: 600;
             letter-spacing: -.5px;
 
-            color: var(--text);
-            text-decoration: none;
             display: flex;
             align-items: center;
-            text-decoration: none;
         }
 
-        .big-logo {
-            color: var(--text);
-            text-decoration: none;
-            width: 200px;
-            height: 200px;
-            background-color: transparent;
+        .logo img {
+            height: 30px;
+            width: auto;
+            margin-right: 8px;
         }
-
 
         nav {
             display: flex;
+            align-items: center;
             gap: 28px;
         }
 
         nav a {
             color: var(--secondary);
             text-decoration: none;
+
             font-size: 14px;
-            transition: color .2s;
+
+            transition: color .2s ease;
         }
 
         nav a:hover {
             color: white;
         }
 
-        /* HERO */
+        /* =========================
+           LANGUAGE SELECTOR
+        ========================= */
+
+        .language-selector {
+            appearance: none;
+            -webkit-appearance: none;
+
+            padding: 8px 28px 8px 12px;
+
+            color: #f5f5f7;
+            background: rgba(255,255,255,.06);
+
+            border: 1px solid rgba(255,255,255,.10);
+            border-radius: 999px;
+
+            font-size: 13px;
+            font-weight: 500;
+
+            outline: none;
+            cursor: pointer;
+
+            transition:
+                background .2s ease,
+                border-color .2s ease;
+        }
+
+        .language-selector:hover {
+            background: rgba(255,255,255,.10);
+            border-color: rgba(255,255,255,.16);
+        }
+
+        .language-selector option {
+            color: white;
+            background: #111;
+        }
+
+        /* =========================
+           HERO
+        ========================= */
 
         .hero {
             max-width: 1000px;
             margin: auto;
-            padding: 25px 24px 120px;
+
+            padding:
+                25px 24px 120px;
+
             text-align: center;
         }
 
         .eyebrow {
             color: var(--blue);
+
             font-size: 15px;
             font-weight: 600;
+
             margin-bottom: 20px;
         }
 
         .hero h1 {
             margin: 0;
 
-            font-size: clamp(58px, 10vw, 85px);
+            font-size:
+                clamp(58px, 10vw, 85px);
+
             line-height: .95;
             letter-spacing: -6px;
             font-weight: 700;
 
-            background: linear-gradient(
-                180deg,
-                #ffffff 10%,
-                #aeb0b7 100%
-            );
+            background:
+                linear-gradient(
+                    180deg,
+                    #ffffff 10%,
+                    #aeb0b7 100%
+                );
 
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -157,7 +222,9 @@
         .hero h2 {
             margin: 10px 0;
 
-            font-size: clamp(24px, 4vw, 30px);
+            font-size:
+                clamp(24px, 4vw, 30px);
+
             letter-spacing: -1.5px;
             font-weight: 600;
         }
@@ -167,8 +234,20 @@
             margin: 25px auto 0;
 
             color: var(--secondary);
+
             font-size: 20px;
             line-height: 1.55;
+        }
+
+        .big-logo {
+            width: 200px;
+            height: 200px;
+
+            object-fit: contain;
+
+            background: transparent;
+
+            margin: 10px auto;
         }
 
         .hero-buttons {
@@ -177,20 +256,25 @@
             display: flex;
             justify-content: center;
             gap: 12px;
+
             flex-wrap: wrap;
         }
 
         .button {
             display: inline-block;
+
             padding: 12px 22px;
 
             border-radius: 999px;
 
             text-decoration: none;
+
             font-size: 15px;
             font-weight: 500;
 
-            transition: transform .2s, opacity .2s;
+            transition:
+                transform .2s ease,
+                opacity .2s ease;
         }
 
         .button:hover {
@@ -204,23 +288,41 @@
 
         .button-secondary {
             color: #fff;
-            border: 1px solid var(--border);
-            background: rgba(255,255,255,.06);
+
+            border:
+                1px solid var(--border);
+
+            background:
+                rgba(255,255,255,.06);
         }
 
-        /* DEVICE */
+        .hero-meta {
+            margin-top: 18px;
+
+            color: var(--secondary);
+
+            font-size: 13px;
+        }
+
+        /* =========================
+           DEVICE
+        ========================= */
 
         .device-section {
             max-width: 1100px;
             margin: auto;
-            padding: 20px 24px 130px;
+
+            padding:
+                20px 24px 130px;
         }
 
         .device-card {
             min-height: 460px;
 
             border-radius: 32px;
-            border: 1px solid var(--border);
+
+            border:
+                1px solid var(--border);
 
             background:
                 radial-gradient(
@@ -245,11 +347,6 @@
             padding: 50px 30px;
         }
 
-        .device-icon {
-            font-size: 72px;
-            margin-bottom: 20px;
-        }
-
         .device-card h2 {
             font-size: 36px;
             letter-spacing: -1.5px;
@@ -258,156 +355,41 @@
 
         .device-card p {
             color: var(--secondary);
+
             font-size: 18px;
             line-height: 1.6;
+
             margin-top: 18px;
         }
 
-        /* FEATURES */
-
-        .section {
-            max-width: 1000px;
-            margin: auto;
-            padding: 0 24px 120px;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 45px;
-        }
-
-        .section-title h2 {
-            font-size: 42px;
-            letter-spacing: -1.8px;
-            margin: 0;
-        }
-
-        .section-title p {
-            color: var(--secondary);
-            font-size: 17px;
-            margin-top: 12px;
-        }
-
-        .features {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 18px;
-        }
-
-        .feature {
-            padding: 32px;
-
-            border-radius: 24px;
-            border: 1px solid var(--border);
-
-            background: var(--card);
-
-            backdrop-filter: blur(25px);
-            -webkit-backdrop-filter: blur(25px);
-
-            transition:
-                transform .2s,
-                border-color .2s;
-        }
-
-        .feature:hover {
-            transform: translateY(-4px);
-            border-color: rgba(255,255,255,.2);
-        }
-
-        .feature-icon {
-            width: 46px;
-            height: 46px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            border-radius: 14px;
-
-            background: rgba(41,151,255,.13);
-            color: var(--blue);
-
-            font-size: 21px;
-
-            margin-bottom: 20px;
-        }
-
-        .feature h3 {
-            margin: 0 0 10px;
-
-            font-size: 21px;
-            letter-spacing: -.5px;
-        }
-
-        .feature p {
-            margin: 0;
-
-            color: var(--secondary);
-            font-size: 15px;
-            line-height: 1.65;
-        }
-
-        /* PRIVACY */
-
-        .privacy {
-            max-width: 850px;
-            margin: auto;
-            padding: 0 24px 120px;
-            text-align: center;
-        }
-
-        .privacy h2 {
-            font-size: 38px;
-            letter-spacing: -1.5px;
-        }
-
-        .privacy p {
-            color: var(--secondary);
-            font-size: 17px;
-            line-height: 1.7;
-        }
-
-        /* FOOTER */
-
-        footer {
-            border-top: 1px solid rgba(255,255,255,.07);
-
-            padding: 35px 24px;
-
-            color: #666;
-            font-size: 13px;
-            text-align: center;
-        }
-
-        footer a {
-            color: #777;
-            text-decoration: none;
-            margin: 0 8px;
-        }
-
-        footer a:hover {
-            color: white;
-        }
+        /* =========================
+           SCREENSHOTS
+        ========================= */
 
         .screenshots {
             display: flex;
+
             align-items: center;
             justify-content: center;
+
             gap: 20px;
+
             margin-bottom: 45px;
         }
 
         .screenshots img {
             width: 50%;
             max-width: 300px;
+
             border-radius: 22px;
+
             display: block;
 
             box-shadow:
                 0 25px 70px rgba(0,0,0,.45);
 
-            transition: transform .25s ease;
+            transition:
+                transform .25s ease;
         }
 
         .screenshots img:hover {
@@ -426,7 +408,9 @@
             cursor: zoom-in;
         }
 
-        /* Fullscreen viewer */
+        /* =========================
+           IMAGE VIEWER
+        ========================= */
 
         .image-viewer {
             position: fixed;
@@ -441,7 +425,8 @@
 
             padding: 40px;
 
-            background: rgba(0, 0, 0, .94);
+            background:
+                rgba(0, 0, 0, .94);
 
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
@@ -478,7 +463,9 @@
             border: none;
             border-radius: 50%;
 
-            background: rgba(255,255,255,.12);
+            background:
+                rgba(255,255,255,.12);
+
             color: white;
 
             font-size: 32px;
@@ -490,8 +477,142 @@
         }
 
         .close-viewer:hover {
-            background: rgba(255,255,255,.22);
+            background:
+                rgba(255,255,255,.22);
         }
+
+        /* =========================
+           FEATURES
+        ========================= */
+
+        .section {
+            max-width: 1000px;
+            margin: auto;
+
+            padding:
+                0 24px 120px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-size: 42px;
+            letter-spacing: -1.8px;
+            margin: 0;
+        }
+
+        .section-title p {
+            color: var(--secondary);
+
+            font-size: 17px;
+
+            margin-top: 12px;
+        }
+
+        .features {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 18px;
+        }
+
+        .feature {
+            padding: 32px;
+
+            border-radius: 24px;
+
+            border:
+                1px solid var(--border);
+
+            background:
+                var(--card);
+
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+
+            transition:
+                transform .2s,
+                border-color .2s;
+        }
+
+        .feature:hover {
+            transform: translateY(-4px);
+
+            border-color:
+                rgba(255,255,255,.2);
+        }
+
+        .feature-icon {
+            width: 46px;
+            height: 46px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 14px;
+
+            background:
+                rgba(41,151,255,.13);
+
+            color: var(--blue);
+
+            font-size: 21px;
+
+            margin-bottom: 20px;
+        }
+
+        .feature h3 {
+            margin:
+                0 0 10px;
+
+            font-size: 21px;
+            letter-spacing: -.5px;
+        }
+
+        .feature p {
+            margin: 0;
+
+            color: var(--secondary);
+
+            font-size: 15px;
+            line-height: 1.65;
+        }
+
+        /* =========================
+           PRIVACY
+        ========================= */
+
+        .privacy {
+            max-width: 850px;
+            margin: auto;
+
+            padding:
+                0 24px 120px;
+
+            text-align: center;
+        }
+
+        .privacy h2 {
+            font-size: 38px;
+            letter-spacing: -1.5px;
+        }
+
+        .privacy p {
+            color: var(--secondary);
+
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        /* =========================
+           SUPPORT
+        ========================= */
 
         .hero-support {
             margin-top: 32px;
@@ -499,9 +620,11 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+
             gap: 10px;
 
             color: var(--secondary);
+
             font-size: 14px;
         }
 
@@ -511,25 +634,39 @@
 
         .ko-fi-button {
             display: inline-flex;
+
             align-items: center;
             justify-content: center;
+
             gap: 8px;
 
             margin-top: 18px;
-            padding: 12px 22px;
+
+            padding:
+                12px 22px;
 
             color: #fff !important;
-            background: linear-gradient(135deg, #ff5f5f, #ff8a5b);
 
-            border: 1px solid rgba(255,255,255,.15);
+            background:
+                linear-gradient(
+                    135deg,
+                    #ff5f5f,
+                    #ff8a5b
+                );
+
+            border:
+                1px solid rgba(255,255,255,.15);
+
             border-radius: 999px;
 
             text-decoration: none !important;
+
             font-size: 15px !important;
             font-weight: 600;
 
             box-shadow:
-                0 8px 24px rgba(255, 95, 95, .20);
+                0 8px 24px
+                rgba(255, 95, 95, .20);
 
             transition:
                 transform .2s ease,
@@ -539,24 +676,65 @@
 
         .ko-fi-button:hover {
             color: #fff !important;
-            transform: translateY(-2px);
-            filter: brightness(1.08);
+
+            transform:
+                translateY(-2px);
+
+            filter:
+                brightness(1.08);
 
             box-shadow:
-                0 12px 32px rgba(255, 95, 95, .32);
+                0 12px 32px
+                rgba(255, 95, 95, .32);
         }
 
         .ko-fi-button:active {
-            transform: translateY(0);
+            transform:
+                translateY(0);
         }
 
+        /* =========================
+           FOOTER
+        ========================= */
 
-        /* MOBILE */
+        footer {
+            border-top:
+                1px solid rgba(255,255,255,.07);
+
+            padding:
+                35px 24px;
+
+            color: #666;
+
+            font-size: 13px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #777;
+
+            text-decoration: none;
+
+            margin: 0 8px;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
 
         @media (max-width: 650px) {
 
             header {
-                padding: 18px 24px;
+                padding:
+                    18px 24px;
+            }
+
+            .nav {
+                gap: 12px;
             }
 
             nav {
@@ -567,8 +745,14 @@
                 font-size: 13px;
             }
 
+            .language-selector {
+                font-size: 12px;
+                padding:
+                    7px 8px;
+            }
+
             .hero {
-                padding-top: 100px;
+                padding-top: 70px;
             }
 
             .hero h1 {
@@ -595,56 +779,131 @@
                 width: 32%;
                 border-radius: 14px;
             }
+
         }
+
     </style>
+
 </head>
 
 
 <body>
+
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4Q5DTLF"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<noscript>
+    <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-M4Q5DTLF"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden">
+    </iframe>
+</noscript>
+
 <!-- End Google Tag Manager (noscript) -->
 
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
 <header>
+
     <div class="nav">
 
         <a href="index.html" class="logo">
-            <img src="img/logo.png" alt="Taptiva">Taptiva
+
+            <img
+                src="img/logo.png"
+                alt="Taptiva">
+
+            Taptiva
+
         </a>
 
+
         <nav>
-            <a href="#features">Features</a>
-            <a href="support.html">Support</a>
+
+            <a
+                href="#features"
+                data-i18n="nav.features">
+                Features
+            </a>
+
+            <a
+                href="support.html"
+                data-i18n="nav.support">
+                Support
+            </a>
+
         </nav>
 
+
+        <select
+            id="languageSelector"
+            class="language-selector"
+            aria-label="Language">
+
+            <option value="en">🇺🇸 English</option>
+            <option value="es">🇪🇸 Español</option>
+            <option value="fr">🇫🇷 Français</option>
+            <option value="de">🇩🇪 Deutsch</option>
+            <option value="it">🇮🇹 Italiano</option>
+            <option value="pt">🇵🇹 Português</option>
+            <option value="ja">🇯🇵 日本語</option>
+            <option value="ko">🇰🇷 한국어</option>
+            <option value="zh">🇨🇳 中文</option>
+
+        </select>
+
     </div>
+
 </header>
 
 
 <main>
 
-    <!-- HERO -->
+
+    <!-- =========================
+         HERO
+    ========================= -->
 
     <section class="hero">
 
-        <div class="eyebrow">
+        <div
+            class="eyebrow"
+            data-i18n="hero.eyebrow">
+
             Taptiva 1.0 · Free for Mac
+
         </div>
 
-        <h1>Taptiva</h1>
 
-        <h2>
+        <h1 data-i18n="hero.title">
+            Taptiva
+        </h1>
+
+
+        <h2 data-i18n="hero.subtitle">
             Your phone. Your Mac. Fully connected.
         </h2>
 
-        <img class="big-logo" src="img/big-logo.png" alt="Taptiva">
 
-        <p>
-            Turn your iPhone or Android phone into a powerful
-            remote control for your Mac — with trackpad gestures,
-            keyboard, music controls and app switching.
+        <img
+            class="big-logo"
+            src="img/big-logo.png"
+            alt="Taptiva">
+
+
+        <p data-i18n="hero.description">
+
+            Turn your iPhone or Android phone into a
+            powerful remote control for your Mac —
+            with trackpad gestures, keyboard, music
+            controls and app switching.
+
         </p>
+
 
         <!-- MAIN ACTIONS -->
 
@@ -652,39 +911,58 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <a
                 class="button button-primary"
+                data-i18n="hero.download"
                 href="/download/"
                 onclick="gtag('event', 'download', {
                     file_name: 'Taptiva.dmg',
                     version: '1.0'
                 });">
+
                 ↓ Download Taptiva 1.0
+
             </a>
+
 
             <a
                 class="button button-secondary"
+                data-i18n="hero.discover"
                 href="#features">
+
                 Discover Taptiva
+
             </a>
 
         </div>
 
-        <div class="hero-meta">
+
+        <div
+            class="hero-meta"
+            data-i18n="hero.free">
+
             Free · No account required · macOS
+
         </div>
+
 
         <!-- SUPPORT -->
 
         <div class="hero-support">
 
-            <span>Enjoying Taptiva?</span>
+            <span data-i18n="hero.enjoy">
+                Enjoying Taptiva?
+            </span>
+
 
             <a
                 href="https://ko-fi.com/taptiva"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="ko-fi-button"
+                data-i18n="hero.support"
                 onclick="gtag('event', 'ko_fi_click');">
+
                 ☕ Support Taptiva
+
             </a>
 
         </div>
@@ -692,8 +970,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </section>
 
 
-
-    <!-- CONNECTION -->
+    <!-- =========================
+         CONNECTION
+    ========================= -->
 
     <section class="device-section">
 
@@ -701,49 +980,67 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <div class="device-content">
 
-            <div class="screenshots">
 
-                <img
-                    src="img/first.png"
-                    alt="Taptiva QR pairing"
-                    class="screenshot"
-                >
+                <!-- SCREENSHOTS -->
 
-                <img
-                    src="img/second.png"
-                    alt="Taptiva connected to Mac"
-                    class="screenshot"
-                >
+                <div class="screenshots">
 
-                <img
-                    src="img/third.png"
-                    alt="Taptiva remote trackpad"
-                    class="screenshot"
-                >
+                    <img
+                        src="img/first.png"
+                        alt="Taptiva QR pairing"
+                        class="screenshot">
 
-            </div>
+                    <img
+                        src="img/second.png"
+                        alt="Taptiva connected to Mac"
+                        class="screenshot">
 
-            <!-- Fullscreen viewer -->
+                    <img
+                        src="img/third.png"
+                        alt="Taptiva remote trackpad"
+                        class="screenshot">
 
-            <div id="imageViewer" class="image-viewer">
-
-                <button id="closeViewer" class="close-viewer">
-                    ×
-                </button>
-
-                <img id="fullscreenImage" src="" alt="">
-
-            </div>
+                </div>
 
 
-                <h2>
-                    Control your Mac<br>
+                <!-- FULLSCREEN VIEWER -->
+
+                <div
+                    id="imageViewer"
+                    class="image-viewer">
+
+                    <button
+                        id="closeViewer"
+                        class="close-viewer"
+                        aria-label="Close">
+
+                        ×
+
+                    </button>
+
+                    <img
+                        id="fullscreenImage"
+                        src=""
+                        alt="">
+
+                </div>
+
+
+                <h2 data-i18n="device.title">
+
+                    Control your Mac
+                    <br>
                     from your phone.
+
                 </h2>
 
-                <p>
-                    Scan the QR code shown by Taptiva on your Mac
-                    to pair your phone directly over your local network.
+
+                <p data-i18n="device.description">
+
+                    Scan the QR code shown by Taptiva
+                    on your Mac to pair your phone
+                    directly over your local network.
+
                 </p>
 
             </div>
@@ -753,18 +1050,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </section>
 
 
+    <!-- =========================
+         FEATURES
+    ========================= -->
 
-    <!-- FEATURES -->
+    <section
+        id="features"
+        class="section">
 
-    <section id="features" class="section">
 
         <div class="section-title">
 
-            <h2>
+            <h2 data-i18n="features.title">
                 Simple by design.
             </h2>
 
-            <p>
+
+            <p data-i18n="features.subtitle">
                 Everything you need. Nothing you don't.
             </p>
 
@@ -773,20 +1075,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="features">
 
+
             <article class="feature">
 
                 <div class="feature-icon">
                     ⚡
                 </div>
 
-                <h3>
+
+                <h3 data-i18n="features.trackpad.title">
                     Direct Connection
                 </h3>
 
-                <p>
-                    Connect your phone directly to your Mac
-                    over your local network. No cloud service
-                    is required.
+
+                <p data-i18n="features.trackpad.description">
+
+                    Connect your phone directly to your
+                    Mac over your local network.
+                    No cloud service is required.
+
                 </p>
 
             </article>
@@ -798,13 +1105,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     📱
                 </div>
 
-                <h3>
+
+                <h3 data-i18n="features.keyboard.title">
                     iPhone & Android
                 </h3>
 
-                <p>
-                    Use your iPhone or Android phone as a
-                    remote touch controller for your Mac.
+
+                <p data-i18n="features.keyboard.description">
+
+                    Use your iPhone or Android phone
+                    as a remote touch controller
+                    for your Mac.
+
                 </p>
 
             </article>
@@ -816,14 +1128,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     ◉
                 </div>
 
-                <h3>
+
+                <h3 data-i18n="features.music.title">
                     Remote Touch Control
                 </h3>
 
-                <p>
+
+                <p data-i18n="features.music.description">
+
                     Control your Mac using touch gestures,
                     a virtual trackpad, keyboard input,
                     and radial controls.
+
                 </p>
 
             </article>
@@ -835,40 +1151,56 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     🔒
                 </div>
 
-                <h3>
+
+                <h3 data-i18n="features.apps.title">
                     Private by Design
                 </h3>
 
-                <p>
-                    No account is required. No cloud storage.
-                    Your phone communicates directly with
-                    your Mac.
+
+                <p data-i18n="features.apps.description">
+
+                    No account is required.
+                    No cloud storage.
+                    Your phone communicates directly
+                    with your Mac.
+
                 </p>
 
             </article>
+
 
         </div>
 
     </section>
 
 
-    <!-- PRIVACY -->
+    <!-- =========================
+         PRIVACY
+    ========================= -->
 
     <section class="privacy">
 
-        <h2>
+        <h2 data-i18n="privacy.title">
             No cloud. No accounts.
         </h2>
 
-        <p>
-            Taptiva is designed around a direct connection
-            between your phone and your Mac. Your control
-            session stays on your local network.
+
+        <p data-i18n="privacy.description">
+
+            Taptiva is designed around a direct
+            connection between your phone and your Mac.
+            Your control session stays on your local network.
+
         </p>
 
-        <a class="button button-secondary"
-           href="privacy.html">
+
+        <a
+            class="button button-secondary"
+            href="privacy.html"
+            data-i18n="privacy.learnMore">
+
             Read Privacy Policy
+
         </a>
 
     </section>
@@ -876,56 +1208,126 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </main>
 
 
+<!-- =========================
+     FOOTER
+========================= -->
+
 <footer>
 
-    © 2026 Taptiva. All rights reserved.
+    © 2026 Taptiva.
+
+    <span data-i18n="footer.rights">
+        All rights reserved.
+    </span>
 
     <br><br>
 
-    <a href="privacy.html">Privacy Policy</a>
 
-    <a href="index.html">Support</a>
+    <a
+        href="privacy.html"
+        data-i18n="nav.privacy">
+
+        Privacy Policy
+
+    </a>
+
+
+    <a
+        href="support.html"
+        data-i18n="nav.support">
+
+        Support
+
+    </a>
 
 </footer>
 
+
+<!-- =========================
+     IMAGE VIEWER
+========================= -->
+
 <script>
-    const screenshots = document.querySelectorAll('.screenshot');
-    const viewer = document.getElementById('imageViewer');
-    const fullscreenImage = document.getElementById('fullscreenImage');
-    const closeViewer = document.getElementById('closeViewer');
+
+    const screenshots =
+        document.querySelectorAll('.screenshot');
+
+    const viewer =
+        document.getElementById('imageViewer');
+
+    const fullscreenImage =
+        document.getElementById('fullscreenImage');
+
+    const closeViewer =
+        document.getElementById('closeViewer');
+
 
     screenshots.forEach(image => {
+
         image.addEventListener('click', () => {
 
-            fullscreenImage.src = image.src;
-            fullscreenImage.alt = image.alt;
+            fullscreenImage.src =
+                image.src;
+
+            fullscreenImage.alt =
+                image.alt;
 
             viewer.classList.add('active');
 
-            document.body.style.overflow = 'hidden';
+            document.body.style.overflow =
+                'hidden';
+
         });
+
     });
 
+
     function closeImageViewer() {
+
         viewer.classList.remove('active');
 
         document.body.style.overflow = '';
+
     }
 
-    closeViewer.addEventListener('click', closeImageViewer);
 
-    viewer.addEventListener('click', (event) => {
-        if (event.target === viewer) {
-            closeImageViewer();
-        }
-    });
+    closeViewer.addEventListener(
+        'click',
+        closeImageViewer
+    );
 
-    document.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape') {
-            closeImageViewer();
+
+    viewer.addEventListener(
+        'click',
+        (event) => {
+
+            if (event.target === viewer) {
+                closeImageViewer();
+            }
+
         }
-    });
+    );
+
+
+    document.addEventListener(
+        'keydown',
+        (event) => {
+
+            if (event.key === 'Escape') {
+                closeImageViewer();
+            }
+
+        }
+    );
+
 </script>
+
+
+<!-- =========================
+     TRANSLATIONS
+========================= -->
+
+<script src="/js/i18n.js"></script>
 
 
 </body>

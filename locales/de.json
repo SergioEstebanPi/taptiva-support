@@ -1,0 +1,165 @@
+{
+    "nav": {
+        "home": "Startseite",
+        "features": "Funktionen",
+        "support": "Support",
+        "privacy": "Datenschutz"
+    },
+
+    "hero": {
+        "eyebrow": "Taptiva 1.0 · Kostenlos für Mac",
+        "title": "Taptiva",
+        "subtitle": "Dein Smartphone. Dein Mac. Vollständig verbunden.",
+        "description": "Verwandle dein iPhone oder Android-Smartphone in eine leistungsstarke Fernbedienung für deinen Mac – mit Trackpad-Gesten, Tastatur, Musiksteuerung und App-Wechsel.",
+        "download": "↓ Taptiva 1.0 herunterladen",
+        "discover": "Taptiva entdecken",
+        "free": "Kostenlos · Kein Konto erforderlich · macOS",
+        "enjoy": "Gefällt dir Taptiva?",
+        "support": "☕ Taptiva unterstützen"
+    },
+
+    "features": {
+        "title": "Alles, was du brauchst.",
+        "subtitle": "Eine einfache und leistungsstarke Möglichkeit, deinen Mac von deinem Smartphone aus zu steuern.",
+
+        "trackpad": {
+            "title": "Trackpad",
+            "description": "Steuere deinen Mac mit flüssigen Touch-Gesten. Bewege den Cursor, klicke, scrolle und navigiere ganz natürlich."
+        },
+
+        "keyboard": {
+            "title": "Tastatur",
+            "description": "Tippe direkt von deinem Smartphone aus mit einer vollständigen Fernbedienungs-Tastatur für deinen Mac."
+        },
+
+        "music": {
+            "title": "Musiksteuerung",
+            "description": "Steuere deine Musik, ohne deinen Schreibtisch zu verlassen. Wiedergabe starten, pausieren, Titel wechseln und die Wiedergabe steuern."
+        },
+
+        "apps": {
+            "title": "App-Wechsel",
+            "description": "Wechsle schnell zwischen Anwendungen auf deinem Mac direkt von deinem Smartphone aus."
+        }
+    },
+
+    "device": {
+        "title": "Dein Smartphone wird zur Fernbedienung.",
+        "description": "Verbinde dein Smartphone direkt mit deinem Mac und steuere ihn von jedem Ort in deinem lokalen Netzwerk.",
+        "icon": "⌁"
+    },
+
+    "privacy": {
+        "title": "Datenschutz von Anfang an.",
+        "description": "Taptiva verbindet dein Smartphone direkt mit deinem Mac. Kein Konto, kein Abonnement und kein Cloud-Dienst erforderlich.",
+        "learnMore": "Mehr über Datenschutz erfahren"
+    },
+
+    "support": {
+        "title": "Unterstütze Taptiva",
+        "description": "Taptiva ist kostenlos und wird unabhängig entwickelt. Wenn du die App nützlich findest, kannst du ihre Entwicklung unterstützen.",
+        "button": "☕ Taptiva unterstützen"
+    },
+
+    "footer": {
+        "rights": "Alle Rechte vorbehalten."
+    },
+
+    "supportPage": {
+        "metaTitle": "Taptiva Support",
+
+        "title": "Taptiva Support",
+
+        "subtitle": "Touch-Fernbedienung für Mac. Schnell, privat und direkt mit deinem Smartphone verbunden.",
+
+        "connection": {
+            "title": "So verbindest du dich",
+            "description": "Öffne Taptiva auf deinem Mac und scanne den QR-Code mit deinem iPhone oder Android-Smartphone. Dein Smartphone verbindet sich direkt mit deinem Mac."
+        },
+
+        "accessibility": {
+            "title": "Bedienungshilfen",
+            "description": "Taptiva benötigt die Berechtigung für Bedienungshilfen, um deinen Mac zu steuern. Öffne die Systemeinstellungen, gehe zu Datenschutz & Sicherheit → Bedienungshilfen und aktiviere Taptiva."
+        },
+
+        "connectionProblems": {
+            "title": "Verbindungsprobleme",
+            "description": "Stelle sicher, dass dein Mac und dein Smartphone mit demselben WLAN verbunden sind. Falls erforderlich, stelle die Verbindung erneut her, indem du den QR-Code erneut scannst."
+        },
+
+        "privacy": {
+            "title": "Datenschutz",
+            "description": "Taptiva verwendet eine direkte Verbindung zwischen deinem Smartphone und deinem Mac. Es ist kein Cloud-Konto erforderlich."
+        },
+
+        "support": {
+            "title": "Gefällt dir Taptiva?",
+            "description": "Taptiva ist kostenlos und wird unabhängig entwickelt. Wenn du die App nützlich findest, kannst du ihre Entwicklung unterstützen.",
+            "button": "☕ Taptiva unterstützen"
+        },
+
+        "help": {
+            "title": "Brauchst du Hilfe?",
+            "description": "Wenn du ein Problem mit Taptiva hast, helfen wir dir gerne weiter."
+        }
+    },
+
+    "privacyPage": {
+        "metaTitle": "Datenschutzerklärung von Taptiva",
+
+        "title": "Datenschutzerklärung",
+
+        "subtitle": "Deine Privatsphäre ist uns wichtig.",
+
+        "overview": {
+            "title": "Übersicht",
+            "p1": "Taptiva ist eine Anwendung zur Touch-Fernsteuerung für Mac. Sie ermöglicht es, einen Mac über ein lokales Netzwerk mit einem iPhone oder Android-Gerät zu steuern.",
+            "p2": "Taptiva wurde so entwickelt, dass keine Anmeldung, kein Cloud-Dienst und kein Abonnement erforderlich sind."
+        },
+
+        "dataCollection": {
+            "title": "Datenerfassung",
+            "p1": "Taptiva selbst sammelt, speichert oder verkauft über die Anwendung keine personenbezogenen Daten. Die Taptiva-App benötigt für ihre grundlegenden Funktionen weder ein Konto noch einen Cloud-Dienst.",
+            "p2": "Unsere Website verwendet Google Analytics, um zu verstehen, wie Besucher die Website nutzen, und um deren Inhalte und Funktionen zu verbessern.",
+            "p3": "Google Analytics kann Informationen wie den ungefähren geografischen Standort, Browser- und Geräteinformationen, Sitzungsstatistiken und Interaktionen mit der Website erfassen. Google Analytics kann außerdem eigene Cookies, einschließlich des Cookies _ga, verwenden, um Nutzer und Sitzungen zu unterscheiden.",
+            "p4": "Wir übermitteln wissentlich keine personenbezogenen Daten an Google Analytics."
+        },
+
+        "localNetwork": {
+            "title": "Kommunikation über das lokale Netzwerk",
+            "p1": "Taptiva kommuniziert direkt zwischen deinem Mac und deinem Mobilgerät über dein lokales Netzwerk.",
+            "p2": "Die während dieser Verbindung ausgetauschten Informationen werden ausschließlich zur Bereitstellung der Fernsteuerungsfunktionen der Anwendung verwendet."
+        },
+
+        "accessibility": {
+            "title": "Berechtigung für Bedienungshilfen",
+            "p1": "Taptiva benötigt die macOS-Berechtigung für Bedienungshilfen, um Fernsteuerungsaktionen auf deinem Mac auszuführen, beispielsweise die Interaktion mit Maus, Tastatur und anderen unterstützten Systemsteuerungen.",
+            "p2": "Diese Berechtigung wird von macOS verwaltet und kann jederzeit unter Systemeinstellungen → Datenschutz & Sicherheit → Bedienungshilfen widerrufen werden."
+        },
+
+        "thirdParty": {
+            "title": "Dienste von Drittanbietern",
+            "p1": "Unsere Website verwendet Google Analytics, einen Webanalysedienst von Google LLC.",
+            "p2": "Google Analytics wird verwendet, um die Nutzung der Website zu messen und zu verstehen, wie Besucher mit der Taptiva-Website interagieren. Wir verwenden Google Analytics nicht für Werbung oder Remarketing, sofern diese Datenschutzerklärung nicht entsprechend aktualisiert wird.",
+            "p3": "Google Analytics kann Cookies und andere Identifikatoren verwenden, um seine Messdienste bereitzustellen. Die Verwendung dieser Technologien kann je nach Standort des Besuchers gesetzlichen Anforderungen und Einwilligungspflichten unterliegen.",
+            "p4": "Taptiva verwendet auf dieser Website keine Werbedienste von Drittanbietern."
+        },
+
+        "children": {
+            "title": "Datenschutz für Kinder",
+            "description": "Taptiva sammelt wissentlich keine personenbezogenen Daten von Kindern oder anderen Nutzern."
+        },
+
+        "changes": {
+            "title": "Änderungen dieser Datenschutzerklärung",
+            "description": "Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Änderungen werden auf dieser Seite zusammen mit einem aktualisierten Datum des Inkrafttretens veröffentlicht."
+        },
+
+        "contact": {
+            "title": "Kontakt",
+            "description": "Wenn du Fragen zu dieser Datenschutzerklärung oder zu Taptiva hast, kannst du uns unter folgender Adresse kontaktieren:"
+        },
+
+        "updated": "Gültig ab: 27. August 2026"
+    }
+}
