@@ -18,6 +18,18 @@
         "support": "☕ Taptiva unterstützen"
     },
 
+    "subscribe": {
+        "title": "Bleibe über Taptiva informiert",
+        "description": "Erhalte Benachrichtigungen über neue Funktionen, Updates und Veröffentlichungen.",
+        "placeholder": "Deine E-Mail-Adresse",
+        "button": "Informiert bleiben",
+        "instagram": "Folge Taptiva auf",
+        "privacy": "Das E-Mail-Abonnement ist optional und wird ausschließlich für Taptiva-Updates und Veröffentlichungen verwendet.",
+        "success": "Du bist angemeldet. Vielen Dank!",
+        "error": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+        "loading": "Wird angemeldet..."
+    },
+
     "features": {
         "title": "Alles, was du brauchst.",
         "subtitle": "Eine einfache und leistungsstarke Möglichkeit, deinen Mac von deinem Smartphone aus zu steuern.",

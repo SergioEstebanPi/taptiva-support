@@ -18,6 +18,18 @@
         "support": "☕ 支持 Taptiva"
     },
 
+    "subscribe": {
+        "title": "获取 Taptiva 最新消息",
+        "description": "获取新功能、更新和版本发布的通知。",
+        "placeholder": "你的电子邮箱",
+        "button": "获取最新消息",
+        "instagram": "关注 Taptiva",
+        "privacy": "订阅电子邮件是可选的，仅用于发送 Taptiva 的更新和版本发布通知。",
+        "success": "订阅成功，谢谢！",
+        "error": "出现问题，请重试。",
+        "loading": "正在订阅..."
+    },
+
     "features": {
         "title": "你需要的一切。",
         "subtitle": "通过手机简单而强大地控制你的 Mac。",

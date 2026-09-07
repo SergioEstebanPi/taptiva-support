@@ -34,14 +34,11 @@ async function setLanguage(language) {
         const translations = await response.json();
 
         /*
-         * Busca todos los elementos que tengan:
-         *
-         * data-i18n="hero.title"
-         *
-         * y obtiene:
-         *
-         * translations.hero.title
+         * =========================
+         * TEXT CONTENT
+         * =========================
          */
+
         document.querySelectorAll("[data-i18n]").forEach(element => {
 
             const key = element.dataset.i18n;
@@ -55,22 +52,65 @@ async function setLanguage(language) {
                 );
 
             if (value !== undefined) {
-
-                // Para elementos normales
                 element.textContent = value;
             }
         });
 
-        // Actualizar idioma del documento
+
+        /*
+         * =========================
+         * PLACEHOLDERS
+         * =========================
+         */
+
+        document
+            .querySelectorAll("[data-i18n-placeholder]")
+            .forEach(element => {
+
+                const key =
+                    element.dataset.i18nPlaceholder;
+
+                const value = key
+                    .split(".")
+                    .reduce(
+                        (object, property) =>
+                            object?.[property],
+                        translations
+                    );
+
+                if (value !== undefined) {
+                    element.placeholder = value;
+                }
+            });
+
+
+        /*
+         * =========================
+         * DOCUMENT LANGUAGE
+         * =========================
+         */
+
         document.documentElement.lang = language;
 
-        // Guardar idioma
+
+        /*
+         * =========================
+         * SAVE LANGUAGE
+         * =========================
+         */
+
         localStorage.setItem(
             "language",
             language
         );
 
-        // Actualizar selector
+
+        /*
+         * =========================
+         * UPDATE SELECTOR
+         * =========================
+         */
+
         if (selector) {
             selector.value = language;
         }

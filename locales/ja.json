@@ -18,6 +18,18 @@
         "support": "☕ Taptivaを支援する"
     },
 
+    "subscribe": {
+        "title": "Taptivaの最新情報を受け取る",
+        "description": "新機能、アップデート、リリースのお知らせを受け取れます。",
+        "placeholder": "メールアドレス",
+        "button": "最新情報を受け取る",
+        "instagram": "Taptivaをフォロー",
+        "privacy": "メール登録は任意で、Taptivaのアップデートやリリースのお知らせのみに使用されます。",
+        "success": "登録が完了しました。ありがとうございます！",
+        "error": "エラーが発生しました。もう一度お試しください。",
+        "loading": "登録中..."
+    },
+
     "features": {
         "title": "必要なものが、すべてここに。",
         "subtitle": "スマートフォンからMacを簡単かつパワフルに操作できます。",

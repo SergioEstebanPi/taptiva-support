@@ -18,6 +18,18 @@
         "support": "☕ Taptiva 후원하기"
     },
 
+    "subscribe": {
+        "title": "Taptiva 최신 소식 받기",
+        "description": "새로운 기능, 업데이트 및 출시 소식을 받아보세요.",
+        "placeholder": "이메일 주소",
+        "button": "최신 소식 받기",
+        "instagram": "Taptiva 팔로우",
+        "privacy": "이메일 구독은 선택 사항이며 Taptiva 업데이트 및 출시 소식을 보내는 데만 사용됩니다.",
+        "success": "구독이 완료되었습니다. 감사합니다!",
+        "error": "문제가 발생했습니다. 다시 시도해 주세요.",
+        "loading": "구독 중..."
+    },
+
     "features": {
         "title": "필요한 모든 기능.",
         "subtitle": "휴대폰에서 Mac을 간편하고 강력하게 제어하는 새로운 방법.",

@@ -18,6 +18,18 @@
         "support": "☕ Supporta Taptiva"
     },
 
+    "subscribe": {
+        "title": "Rimani aggiornato su Taptiva",
+        "description": "Ricevi notifiche su nuove funzionalità, aggiornamenti e versioni.",
+        "placeholder": "Il tuo indirizzo email",
+        "button": "Rimani aggiornato",
+        "instagram": "Segui Taptiva su",
+        "privacy": "L'iscrizione via email è facoltativa e viene utilizzata solo per inviare aggiornamenti e nuove versioni di Taptiva.",
+        "success": "Iscrizione completata. Grazie!",
+        "error": "Si è verificato un errore. Riprova.",
+        "loading": "Iscrizione..."
+    },
+
     "features": {
         "title": "Tutto ciò di cui hai bisogno.",
         "subtitle": "Un modo semplice e potente per controllare il tuo Mac dal tuo telefono.",
