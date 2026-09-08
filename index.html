@@ -20,6 +20,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Taptiva",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "macOS",
+      "description": "Turn your iPhone or Android phone into a remote touch controller for your Mac.",
+      "url": "https://taptiva.tech/",
+      "downloadUrl": "https://taptiva.tech/download/",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
     <title>Taptiva — Remote Touch Control for Mac</title>
 
     <meta
@@ -1111,20 +1130,13 @@
 
             <a
                 class="button button-primary download-mac"
-                href="/download/"
-                onclick="gtag('event', 'download', {
-                    file_name: 'Taptiva.dmg',
-                    version: '1.0'
-                });">
-
+                href="/download/">
                 <span class="apple-logo" aria-hidden="true">
                     <img src="img/apple-logo.svg" alt="">
                 </span>
-
                 <span data-i18n="hero.download">
                     Download Taptiva 1.0
                 </span>
-
             </a>
 
 

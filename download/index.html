@@ -4,7 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Taptiva — Remote Touch Control for Mac">
+    <meta property="og:description"
+        content="Turn your iPhone or Android phone into a remote touch controller for your Mac. Direct connection, no cloud, no accounts.">
+    <meta property="og:url" content="https://taptiva.tech/">
+    <meta property="og:image" content="https://taptiva.tech/img/og-image.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Taptiva — Remote Touch Control for Mac">
+    <meta name="twitter:description"
+        content="Turn your iPhone or Android phone into a remote touch controller for your Mac. Direct connection, no cloud, no accounts.">
+    <meta name="twitter:image" content="https://taptiva.tech/img/og-image.png">
+
     <title>Downloading Taptiva</title>
+    <link rel="canonical" href="https://taptiva.tech/">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KWKJR2DSM7"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-KWKJR2DSM7');
+    </script>
 
     <style>
         :root {
@@ -222,7 +250,8 @@
                 href="https://github.com/SergioEstebanPi/taptiva-support/releases/latest/download/Taptiva.dmg"
                 onclick="gtag('event', 'download_manual', {
                     file_name: 'Taptiva.dmg',
-                    version: '1.0'
+                    version: '1.0',
+                    location: 'download_page',
                 });">
                 Download manually
             </a>
@@ -266,13 +295,22 @@
         const description = document.getElementById("description");
         const status = document.getElementById("status");
 
-        setTimeout(() => {
+        let navigationStarted = false;
+
+        function startDownload() {
+
+            if (navigationStarted) {
+                return;
+            }
+
+            navigationStarted = true;
 
             // Stop the loader
             spinner.classList.add("done");
 
             // Update the interface
             title.textContent = "Download started";
+
             description.textContent =
                 "Taptiva is being downloaded to your Mac.";
 
@@ -281,11 +319,46 @@
 
             status.classList.add("success");
 
-            // Start the download
-            window.location.href = downloadUrl;
+            const navigate = () => {
+                window.location.href = downloadUrl;
+            };
 
+            // Send analytics before leaving the page
+            if (typeof gtag === "function") {
+
+                let fallbackTimer = setTimeout(() => {
+                    navigate();
+                }, 500);
+
+                gtag("event", "download", {
+
+                    file_name: "Taptiva.dmg",
+
+                    version: "1.0",
+
+                    location: "download_page",
+
+                    event_callback: () => {
+
+                        clearTimeout(fallbackTimer);
+
+                        navigate();
+                    }
+
+                });
+
+            } else {
+
+                // Analytics unavailable
+                navigate();
+
+            }
+        }
+
+        setTimeout(() => {
+            startDownload();
         }, 1000);
-    </script>
 
+    </script>
 </body>
 </html>
