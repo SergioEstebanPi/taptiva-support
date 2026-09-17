@@ -262,6 +262,21 @@
             margin: 10px auto;
         }
 
+        .hero-videos {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .hero-videos .hero-video {
+            width: 100%;
+            display: block;
+            border-radius: 18px;
+            overflow: hidden;
+        }
+
         .hero-video {
             display: block;
             width: min(100%, 400px);
@@ -1110,6 +1125,11 @@
                 padding: 12px 18px;
             }
 
+            .hero-videos {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
         }
 
     </style>
@@ -1219,19 +1239,38 @@
         </h2>
 
 
-        <video
-            class="hero-video"
-            autoplay
-            muted
-            loop
-            playsinline
-            preload="metadata"
-            aria-label="Taptiva controlling a computer from a phone">
+        <div class="hero-videos">
 
-            <source src="video/taptiva-demo.mp4" type="video/mp4">
+            <video
+                class="hero-video"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                aria-label="Taptiva controlling Windows from a phone">
 
-            Your browser does not support video playback.
-        </video>
+                <source src="video/taptiva-windows-demo.mp4" type="video/mp4">
+
+                Your browser does not support video playback.
+            </video>
+            
+            <video
+                class="hero-video"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                aria-label="Taptiva controlling a Mac from a phone">
+
+                <source src="video/taptiva-demo.mp4" type="video/mp4">
+
+                Your browser does not support video playback.
+            </video>
+
+
+        </div>
 
 
         <!-- MAIN ACTIONS -->
