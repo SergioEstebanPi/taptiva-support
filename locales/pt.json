@@ -7,24 +7,26 @@
     },
 
     "hero": {
-        "eyebrow": "Taptiva 1.0 · Grátis para Mac",
+        "eyebrow": "Taptiva · Experimente grátis",
         "title": "Taptiva",
-        "subtitle": "Seu telefone. Seu Mac. Totalmente conectados.",
-        "description": "Transforme seu iPhone ou telefone Android em um poderoso controle remoto para o seu Mac, com gestos de trackpad, teclado, controles de música e troca de aplicativos.",
-        "download": "Baixar Taptiva 1.0",
+        "subtitle": "Seu telefone. Seu computador. Totalmente conectados.",
+        "description": "Transforme seu iPhone ou telefone Android em um poderoso controle remoto para seu Mac ou PC com Windows, com gestos de trackpad, teclado, controles de mídia e troca de aplicativos.",
+        "downloadMac": "Taptiva.dmg",
+        "downloadWindows": "Taptiva.exe",
+        "download": "Experimente o Taptiva grátis",
         "discover": "Descobrir o Taptiva",
-        "free": "Grátis · Nenhuma conta necessária · macOS",
+        "free": "Nenhuma conta necessária · Mac e Windows",
         "enjoy": "Está gostando do Taptiva?",
         "support": "☕ Apoiar o Taptiva"
     },
 
     "subscribe": {
-        "title": "Fique atualizado com a Taptiva",
+        "title": "Fique atualizado com o Taptiva",
         "description": "Receba novidades sobre novos recursos, atualizações e lançamentos.",
         "placeholder": "Seu endereço de e-mail",
         "button": "Quero receber novidades",
-        "instagram": "Siga a Taptiva no",
-        "privacy": "A inscrição por e-mail é opcional e é usada apenas para enviar novidades e lançamentos da Taptiva.",
+        "instagram": "Siga o Taptiva no",
+        "privacy": "A inscrição por e-mail é opcional e é usada apenas para enviar novidades e lançamentos do Taptiva.",
         "success": "Inscrição concluída. Obrigado!",
         "error": "Algo deu errado. Tente novamente.",
         "loading": "Inscrevendo..."
@@ -32,44 +34,44 @@
 
     "features": {
         "title": "Tudo o que você precisa.",
-        "subtitle": "Uma maneira simples e poderosa de controlar seu Mac pelo telefone.",
+        "subtitle": "Uma maneira simples e poderosa de controlar seu Mac ou PC com Windows pelo telefone.",
 
         "trackpad": {
             "title": "Trackpad",
-            "description": "Controle seu Mac com gestos de toque suaves. Mova o cursor, clique, role e navegue naturalmente."
+            "description": "Controle seu computador com gestos de toque suaves. Mova o cursor, clique, role e navegue naturalmente."
         },
 
         "keyboard": {
             "title": "Teclado",
-            "description": "Digite diretamente pelo telefone usando um teclado remoto completo desenvolvido para o seu Mac."
+            "description": "Digite diretamente pelo telefone usando um teclado remoto completo desenvolvido para seu computador."
         },
 
         "music": {
-            "title": "Controles de música",
-            "description": "Controle sua música sem sair da mesa. Reproduza, pause, troque de faixa e controle a reprodução."
+            "title": "Controles de mídia",
+            "description": "Controle sua mídia sem sair da mesa. Reproduza, pause, troque de faixa e controle a reprodução."
         },
 
         "apps": {
             "title": "Troca de aplicativos",
-            "description": "Alterne rapidamente entre os aplicativos do Mac diretamente pelo telefone."
+            "description": "Alterne rapidamente entre os aplicativos do Mac ou Windows diretamente pelo telefone."
         }
     },
 
     "device": {
         "title": "Seu telefone se transforma em um controle remoto.",
-        "description": "Conecte seu telefone diretamente ao Mac e controle-o de qualquer lugar da sua rede local.",
+        "description": "Conecte seu telefone diretamente ao Mac ou PC com Windows e controle seu computador de qualquer lugar da sua rede local.",
         "icon": "⌁"
     },
 
     "privacy": {
-        "title": "Privacidade desde o início.",
-        "description": "O Taptiva cria uma conexão direta entre seu telefone e seu Mac. Nenhuma conta, assinatura ou serviço de nuvem é necessário.",
+        "title": "Controle local. Nenhuma conta necessária.",
+        "description": "O Taptiva conecta seu telefone diretamente ao Mac ou PC com Windows pela sua rede local. Nenhuma conta é necessária para conectar e controlar seu computador.",
         "learnMore": "Saiba mais sobre privacidade"
     },
 
     "support": {
         "title": "Apoie o Taptiva",
-        "description": "O Taptiva é gratuito e desenvolvido de forma independente. Se você considera o aplicativo útil, considere apoiar seu desenvolvimento.",
+        "description": "O Taptiva é desenvolvido de forma independente. Se você considera o aplicativo útil, considere apoiar seu desenvolvimento.",
         "button": "☕ Apoiar o Taptiva"
     },
 
@@ -82,31 +84,31 @@
 
         "title": "Suporte do Taptiva",
 
-        "subtitle": "Controle remoto por toque para Mac. Rápido, privado e conectado diretamente ao seu telefone.",
+        "subtitle": "Controle remoto por toque para Mac e Windows. Rápido, privado e conectado diretamente ao seu telefone.",
 
         "connection": {
             "title": "Como conectar",
-            "description": "Abra o Taptiva no seu Mac e escaneie o código QR com seu iPhone ou telefone Android. Seu telefone será conectado diretamente ao Mac."
+            "description": "Abra o Taptiva no seu Mac ou PC com Windows e escaneie o código QR com seu iPhone ou telefone Android. Seu telefone será conectado diretamente ao computador pela rede local."
         },
 
         "accessibility": {
             "title": "Acessibilidade",
-            "description": "O Taptiva requer permissão de Acessibilidade para controlar seu Mac. Abra os Ajustes do Sistema, depois Privacidade e Segurança → Acessibilidade e ative o Taptiva."
+            "description": "No Mac, o Taptiva requer permissão de Acessibilidade para controlar o computador. Abra os Ajustes do Sistema, depois Privacidade e Segurança → Acessibilidade e ative o Taptiva."
         },
 
         "connectionProblems": {
             "title": "Problemas de conexão",
-            "description": "Certifique-se de que seu Mac e seu telefone estejam conectados à mesma rede Wi-Fi. Se necessário, conecte novamente escaneando o código QR."
+            "description": "Certifique-se de que seu computador e seu telefone estejam conectados à mesma rede local. Se necessário, conecte novamente escaneando o código QR."
         },
 
         "privacy": {
             "title": "Privacidade",
-            "description": "O Taptiva usa uma conexão direta entre seu telefone e seu Mac. Nenhuma conta na nuvem é necessária."
+            "description": "O Taptiva usa uma conexão local direta entre seu telefone e seu computador para o controle remoto. Nenhuma conta é necessária."
         },
 
         "support": {
             "title": "Está gostando do Taptiva?",
-            "description": "O Taptiva é gratuito e desenvolvido de forma independente. Se você considera o aplicativo útil, considere apoiar seu desenvolvimento.",
+            "description": "O Taptiva é desenvolvido de forma independente. Se você considera o aplicativo útil, considere apoiar seu desenvolvimento.",
             "button": "☕ Apoiar o Taptiva"
         },
 
@@ -125,27 +127,25 @@
 
         "overview": {
             "title": "Visão geral",
-            "p1": "O Taptiva é um aplicativo de controle remoto por toque para Mac. Ele permite que os usuários controlem o Mac usando um iPhone ou dispositivo Android por meio de uma rede local.",
-            "p2": "O Taptiva foi desenvolvido para funcionar sem exigir uma conta, serviço de nuvem ou assinatura."
+            "p1": "O Taptiva é um aplicativo de controle remoto por toque para Mac e Windows. Ele permite que os usuários controlem seus computadores usando um iPhone ou dispositivo Android por meio de uma rede local.",
+            "p2": "Os principais recursos de controle remoto do Taptiva não exigem uma conta ou serviço de nuvem."
         },
 
         "dataCollection": {
             "title": "Coleta de dados",
-            "p1": "O aplicativo Taptiva não coleta, armazena ou vende informações pessoais. Uma conta ou serviço de nuvem não é necessário para utilizar os principais recursos do Taptiva.",
-            "p2": "Nosso site utiliza o Google Analytics para entender como os visitantes utilizam o site e nos ajudar a melhorar seu conteúdo e seus recursos.",
-            "p3": "O Google Analytics pode coletar informações como localização geográfica aproximada, informações sobre o navegador e o dispositivo, estatísticas de sessão e interações com o site. O Google Analytics também pode utilizar cookies próprios, incluindo o cookie _ga, para distinguir usuários e sessões.",
-            "p4": "Não enviamos intencionalmente ao Google Analytics informações que permitam identificar pessoalmente os usuários."
+            "p1": "O Taptiva prioriza conexões locais. Seu telefone se conecta diretamente ao seu Mac ou PC com Windows pela sua rede local. Nenhuma conta ou conexão com a nuvem é necessária para o controle remoto.",
+            "p2": "Nosso site usa o Google Analytics para entender o uso do site e melhorar o Taptiva."
         },
 
         "localNetwork": {
             "title": "Comunicação pela rede local",
-            "p1": "O Taptiva se comunica diretamente entre seu Mac e seu dispositivo móvel por meio da rede local.",
-            "p2": "As informações trocadas durante essa conexão são utilizadas exclusivamente para fornecer os recursos de controle remoto do aplicativo."
+            "p1": "O Taptiva se comunica diretamente entre o computador e o dispositivo móvel por meio da rede local.",
+            "p2": "As informações trocadas durante essa conexão são utilizadas para fornecer os recursos de controle remoto do aplicativo."
         },
 
         "accessibility": {
             "title": "Permissão de Acessibilidade",
-            "p1": "O Taptiva requer a permissão de Acessibilidade do macOS para executar ações de controle remoto no Mac, como interagir com o mouse, teclado e outros controles do sistema compatíveis.",
+            "p1": "No macOS, o Taptiva requer a permissão de Acessibilidade para executar ações de controle remoto no Mac, como interagir com o mouse, teclado e outros controles do sistema compatíveis.",
             "p2": "Essa permissão é gerenciada pelo macOS e pode ser revogada a qualquer momento em Ajustes do Sistema → Privacidade e Segurança → Acessibilidade."
         },
 

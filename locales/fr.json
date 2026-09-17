@@ -7,13 +7,15 @@
     },
 
     "hero": {
-        "eyebrow": "Taptiva 1.0 · Gratuit pour Mac",
+        "eyebrow": "Taptiva · Essayez gratuitement",
         "title": "Taptiva",
-        "subtitle": "Votre téléphone. Votre Mac. Totalement connectés.",
-        "description": "Transformez votre iPhone ou téléphone Android en une puissante télécommande pour votre Mac, avec des gestes de trackpad, un clavier, des commandes musicales et le changement d'applications.",
-        "download": "Télécharger Taptiva 1.0",
+        "subtitle": "Votre téléphone. Votre ordinateur. Totalement connectés.",
+        "description": "Transformez votre iPhone ou téléphone Android en une puissante télécommande pour votre Mac ou PC Windows, avec des gestes de trackpad, un clavier, des commandes multimédias et le changement d'applications.",
+        "downloadMac": "Taptiva.dmg",
+        "downloadWindows": "Taptiva.exe",
+        "download": "Essayer Taptiva gratuitement",
         "discover": "Découvrir Taptiva",
-        "free": "Gratuit · Aucun compte requis · macOS",
+        "free": "Aucun compte requis · Mac et Windows",
         "enjoy": "Vous aimez Taptiva ?",
         "support": "☕ Soutenir Taptiva"
     },
@@ -32,44 +34,44 @@
 
     "features": {
         "title": "Tout ce dont vous avez besoin.",
-        "subtitle": "Une façon simple et puissante de contrôler votre Mac depuis votre téléphone.",
+        "subtitle": "Une façon simple et puissante de contrôler votre Mac ou PC Windows depuis votre téléphone.",
 
         "trackpad": {
             "title": "Trackpad",
-            "description": "Contrôlez votre Mac avec des gestes tactiles fluides. Déplacez le curseur, cliquez, faites défiler et naviguez naturellement."
+            "description": "Contrôlez votre ordinateur avec des gestes tactiles fluides. Déplacez le curseur, cliquez, faites défiler et naviguez naturellement."
         },
 
         "keyboard": {
             "title": "Clavier",
-            "description": "Saisissez du texte directement depuis votre téléphone grâce à un clavier distant complet conçu pour votre Mac."
+            "description": "Saisissez du texte directement depuis votre téléphone grâce à un clavier distant complet conçu pour votre ordinateur."
         },
 
         "music": {
-            "title": "Commandes musicales",
-            "description": "Contrôlez votre musique sans quitter votre bureau. Lisez, mettez en pause, changez de morceau et contrôlez la lecture."
+            "title": "Commandes multimédias",
+            "description": "Contrôlez vos contenus multimédias sans quitter votre bureau. Lisez, mettez en pause, changez de piste et contrôlez la lecture."
         },
 
         "apps": {
             "title": "Changement d'applications",
-            "description": "Passez rapidement d'une application à l'autre sur votre Mac directement depuis votre téléphone."
+            "description": "Passez rapidement d'une application à l'autre sur votre Mac ou PC Windows directement depuis votre téléphone."
         }
     },
 
     "device": {
         "title": "Votre téléphone devient une télécommande.",
-        "description": "Connectez votre téléphone directement à votre Mac et contrôlez-le depuis n'importe quel endroit de votre réseau local.",
+        "description": "Connectez votre téléphone directement à votre Mac ou PC Windows et contrôlez-le depuis n'importe quel endroit de votre réseau local.",
         "icon": "⌁"
     },
 
     "privacy": {
-        "title": "La confidentialité dès la conception.",
-        "description": "Taptiva établit une connexion directe entre votre téléphone et votre Mac. Aucun compte, abonnement ou service cloud n'est nécessaire.",
+        "title": "Contrôle local. Aucun compte requis.",
+        "description": "Taptiva connecte directement votre téléphone à votre Mac ou PC Windows via votre réseau local. Aucun compte n'est nécessaire pour associer et contrôler votre ordinateur.",
         "learnMore": "En savoir plus sur la confidentialité"
     },
 
     "support": {
         "title": "Soutenir Taptiva",
-        "description": "Taptiva est gratuit et développé indépendamment. Si vous le trouvez utile, vous pouvez soutenir son développement.",
+        "description": "Taptiva est développé indépendamment. Si vous le trouvez utile, vous pouvez soutenir son développement.",
         "button": "☕ Soutenir Taptiva"
     },
 
@@ -82,31 +84,31 @@
 
         "title": "Assistance Taptiva",
 
-        "subtitle": "Télécommande tactile pour Mac. Rapide, privée et directement connectée à votre téléphone.",
+        "subtitle": "Télécommande tactile pour Mac et Windows. Rapide, privée et directement connectée à votre téléphone.",
 
         "connection": {
             "title": "Comment se connecter",
-            "description": "Ouvrez Taptiva sur votre Mac et scannez le code QR avec votre iPhone ou téléphone Android. Votre téléphone se connecte directement à votre Mac."
+            "description": "Ouvrez Taptiva sur votre Mac ou PC Windows et scannez le code QR avec votre iPhone ou téléphone Android. Votre téléphone se connecte directement à votre ordinateur via votre réseau local."
         },
 
         "accessibility": {
             "title": "Accessibilité",
-            "description": "Taptiva nécessite l'autorisation d'accessibilité pour contrôler votre Mac. Ouvrez Réglages Système, puis Confidentialité et sécurité → Accessibilité, et activez Taptiva."
+            "description": "Taptiva nécessite l'autorisation d'accessibilité sur macOS pour contrôler votre Mac. Ouvrez Réglages Système, puis Confidentialité et sécurité → Accessibilité, et activez Taptiva."
         },
 
         "connectionProblems": {
             "title": "Problèmes de connexion",
-            "description": "Assurez-vous que votre Mac et votre téléphone sont connectés au même réseau Wi-Fi. Si nécessaire, reconnectez-les en scannant à nouveau le code QR."
+            "description": "Assurez-vous que votre ordinateur et votre téléphone sont connectés au même réseau local. Si nécessaire, reconnectez-les en scannant à nouveau le code QR."
         },
 
         "privacy": {
             "title": "Confidentialité",
-            "description": "Taptiva utilise une connexion directe entre votre téléphone et votre Mac. Aucun compte cloud n'est nécessaire."
+            "description": "Taptiva utilise une connexion locale directe entre votre téléphone et votre ordinateur pour le contrôle à distance. Aucun compte n'est nécessaire."
         },
 
         "support": {
             "title": "Vous aimez Taptiva ?",
-            "description": "Taptiva est gratuit et développé indépendamment. Si vous le trouvez utile, vous pouvez soutenir son développement.",
+            "description": "Taptiva est développé indépendamment. Si vous le trouvez utile, vous pouvez soutenir son développement.",
             "button": "☕ Soutenir Taptiva"
         },
 
@@ -125,27 +127,25 @@
 
         "overview": {
             "title": "Présentation",
-            "p1": "Taptiva est une application de contrôle tactile à distance pour Mac. Elle permet aux utilisateurs de contrôler leur Mac à l'aide d'un iPhone ou d'un appareil Android via un réseau local.",
-            "p2": "Taptiva est conçue pour fonctionner sans nécessiter de compte, de service cloud ou d'abonnement."
+            "p1": "Taptiva est une application de contrôle tactile à distance pour Mac et Windows. Elle permet aux utilisateurs de contrôler leur ordinateur à l'aide d'un iPhone ou d'un appareil Android via un réseau local.",
+            "p2": "Les fonctionnalités principales de contrôle à distance de Taptiva ne nécessitent ni compte ni service cloud."
         },
 
         "dataCollection": {
             "title": "Collecte de données",
-            "p1": "Taptiva elle-même ne collecte, ne stocke et ne vend aucune information personnelle via l'application. L'application Taptiva ne nécessite ni compte ni service cloud pour fournir ses fonctionnalités principales.",
-            "p2": "Notre site web utilise Google Analytics afin de comprendre comment les visiteurs utilisent le site et de nous aider à améliorer son contenu et ses fonctionnalités.",
-            "p3": "Google Analytics peut collecter des informations telles que la localisation géographique approximative, les informations relatives au navigateur et à l'appareil, les statistiques de session et les interactions avec le site web. Google Analytics peut également utiliser des cookies propriétaires, notamment le cookie _ga, afin de distinguer les utilisateurs et les sessions.",
-            "p4": "Nous n'envoyons pas intentionnellement d'informations permettant d'identifier personnellement les utilisateurs à Google Analytics."
+            "p1": "Taptiva privilégie le fonctionnement local. Votre téléphone se connecte directement à votre Mac ou PC Windows via votre réseau local. Aucun compte ni aucune connexion au cloud n'est nécessaire pour le contrôle à distance.",
+            "p2": "Notre site web utilise Google Analytics pour comprendre l'utilisation du site et améliorer Taptiva."
         },
 
         "localNetwork": {
             "title": "Communication sur le réseau local",
-            "p1": "Taptiva communique directement entre votre Mac et votre appareil mobile via votre réseau local.",
-            "p2": "Les informations échangées au cours de cette connexion sont utilisées uniquement pour fournir les fonctionnalités de contrôle à distance de l'application."
+            "p1": "Taptiva communique directement entre votre ordinateur et votre appareil mobile via votre réseau local.",
+            "p2": "Les informations échangées au cours de cette connexion sont utilisées pour fournir les fonctionnalités de contrôle à distance de l'application."
         },
 
         "accessibility": {
             "title": "Autorisation d'accessibilité",
-            "p1": "Taptiva nécessite l'autorisation d'accessibilité de macOS pour effectuer des actions de contrôle à distance sur votre Mac, notamment interagir avec la souris, le clavier et d'autres commandes système prises en charge.",
+            "p1": "Sur macOS, Taptiva nécessite l'autorisation d'accessibilité pour effectuer des actions de contrôle à distance sur votre Mac, notamment interagir avec la souris, le clavier et d'autres commandes système prises en charge.",
             "p2": "Cette autorisation est gérée par macOS et peut être révoquée à tout moment dans Réglages Système → Confidentialité et sécurité → Accessibilité."
         },
 

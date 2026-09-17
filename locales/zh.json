@@ -7,13 +7,15 @@
     },
 
     "hero": {
-        "eyebrow": "Taptiva 1.0 · Mac 免费使用",
+        "eyebrow": "Taptiva · 免费试用",
         "title": "Taptiva",
-        "subtitle": "你的手机。你的 Mac。无缝连接。",
-        "description": "将你的 iPhone 或 Android 手机变成强大的 Mac 遥控器，支持触控板手势、键盘、音乐控制和应用切换。",
-        "download": "下载 Taptiva 1.0",
+        "subtitle": "你的手机。你的电脑。无缝连接。",
+        "description": "将你的 iPhone 或 Android 手机变成强大的 Mac 或 Windows PC 遥控器，支持触控板手势、键盘、媒体控制和应用切换。",
+        "downloadMac": "Taptiva.dmg",
+        "downloadWindows": "Taptiva.exe",
+        "download": "免费试用 Taptiva",
         "discover": "探索 Taptiva",
-        "free": "免费 · 无需账户 · macOS",
+        "free": "无需账户 · Mac 和 Windows",
         "enjoy": "喜欢 Taptiva 吗？",
         "support": "☕ 支持 Taptiva"
     },
@@ -32,44 +34,44 @@
 
     "features": {
         "title": "你需要的一切。",
-        "subtitle": "通过手机简单而强大地控制你的 Mac。",
+        "subtitle": "通过手机简单而强大地控制你的 Mac 或 Windows PC。",
 
         "trackpad": {
             "title": "触控板",
-            "description": "通过流畅的触控手势控制 Mac。移动光标、点击、滚动，并自然地进行导航。"
+            "description": "通过流畅的触控手势控制你的电脑。移动光标、点击、滚动，并自然地进行导航。"
         },
 
         "keyboard": {
             "title": "键盘",
-            "description": "使用专为 Mac 设计的完整远程键盘，直接从手机输入文字。"
+            "description": "使用专为电脑设计的完整远程键盘，直接从手机输入文字。"
         },
 
         "music": {
-            "title": "音乐控制",
-            "description": "无需离开桌面即可控制音乐。播放、暂停、切换歌曲并控制播放。"
+            "title": "媒体控制",
+            "description": "无需离开桌面即可控制媒体。播放、暂停、切换曲目并控制播放。"
         },
 
         "apps": {
             "title": "应用切换",
-            "description": "直接通过手机快速切换 Mac 上的应用程序。"
+            "description": "直接通过手机快速切换 Mac 或 Windows PC 上的应用程序。"
         }
     },
 
     "device": {
         "title": "让你的手机变成遥控器。",
-        "description": "将手机直接连接到 Mac，并从本地网络中的任何位置控制你的 Mac。",
+        "description": "将手机直接连接到 Mac 或 Windows PC，并从本地网络中的任何位置控制你的电脑。",
         "icon": "⌁"
     },
 
     "privacy": {
-        "title": "从设计之初就注重隐私。",
-        "description": "Taptiva 在你的手机和 Mac 之间建立直接连接。无需账户、订阅或云服务。",
+        "title": "本地控制。无需账户。",
+        "description": "Taptiva 通过本地网络将你的手机直接连接到 Mac 或 Windows PC。连接和控制电脑无需账户。",
         "learnMore": "进一步了解隐私"
     },
 
     "support": {
         "title": "支持 Taptiva",
-        "description": "Taptiva 免费提供，并由独立开发者开发。如果你觉得它很有用，可以考虑支持它的开发。",
+        "description": "Taptiva 由独立开发者开发。如果你觉得它很有用，可以考虑支持它的开发。",
         "button": "☕ 支持 Taptiva"
     },
 
@@ -82,31 +84,31 @@
 
         "title": "Taptiva 支持",
 
-        "subtitle": "Mac 远程触控。快速、私密，并与你的手机直接连接。",
+        "subtitle": "适用于 Mac 和 Windows 的远程触控控制。快速、私密，并与你的手机直接连接。",
 
         "connection": {
             "title": "如何连接",
-            "description": "在 Mac 上打开 Taptiva，然后使用 iPhone 或 Android 手机扫描二维码。你的手机将直接连接到 Mac。"
+            "description": "在 Mac 或 Windows PC 上打开 Taptiva，然后使用 iPhone 或 Android 手机扫描二维码。你的手机将通过本地网络直接连接到电脑。"
         },
 
         "accessibility": {
             "title": "辅助功能",
-            "description": "Taptiva 需要辅助功能权限才能控制你的 Mac。打开“系统设置”，然后进入“隐私与安全性”→“辅助功能”，启用 Taptiva。"
+            "description": "在 Mac 上，Taptiva 需要辅助功能权限才能控制电脑。打开“系统设置”，然后进入“隐私与安全性”→“辅助功能”，启用 Taptiva。"
         },
 
         "connectionProblems": {
             "title": "连接问题",
-            "description": "请确保你的 Mac 和手机连接到同一个 Wi-Fi 网络。如有需要，请重新扫描二维码以重新建立连接。"
+            "description": "请确保你的电脑和手机连接到同一个本地网络。如有需要，请重新扫描二维码以重新建立连接。"
         },
 
         "privacy": {
             "title": "隐私",
-            "description": "Taptiva 使用手机与 Mac 之间的直接连接。无需云端账户。"
+            "description": "Taptiva 使用手机与电脑之间的直接本地连接来提供远程控制功能。无需账户。"
         },
 
         "support": {
             "title": "喜欢 Taptiva 吗？",
-            "description": "Taptiva 免费提供，并由独立开发者开发。如果你觉得它很有用，可以考虑支持它的开发。",
+            "description": "Taptiva 由独立开发者开发。如果你觉得它很有用，可以考虑支持它的开发。",
             "button": "☕ 支持 Taptiva"
         },
 
@@ -125,27 +127,25 @@
 
         "overview": {
             "title": "概述",
-            "p1": "Taptiva 是一款适用于 Mac 的远程触控控制应用程序。用户可以通过本地网络使用 iPhone 或 Android 设备控制 Mac。",
-            "p2": "Taptiva 的设计无需账户、云服务或订阅即可运行。"
+            "p1": "Taptiva 是一款适用于 Mac 和 Windows 的远程触控控制应用程序。用户可以通过本地网络使用 iPhone 或 Android 设备控制电脑。",
+            "p2": "Taptiva 的主要远程控制功能无需账户或云服务即可使用。"
         },
 
         "dataCollection": {
             "title": "数据收集",
-            "p1": "Taptiva 应用本身不会收集、存储或出售个人信息。使用 Taptiva 的主要功能无需账户或云服务。",
-            "p2": "我们的网站使用 Google Analytics 来了解访客如何使用网站，并帮助我们改进网站的内容和功能。",
-            "p3": "Google Analytics 可能会收集大致的地理位置、浏览器和设备信息、会话统计数据以及与网站的互动信息。Google Analytics 还可能使用第一方 Cookie（包括 _ga Cookie）来区分用户和会话。",
-            "p4": "我们不会有意向 Google Analytics 发送能够直接识别用户个人身份的信息。"
+            "p1": "Taptiva 以本地连接为核心。你的手机通过本地网络直接连接到 Mac 或 Windows PC。远程控制无需账户，也无需连接云端。",
+            "p2": "我们的网站使用 Google Analytics 来了解网站使用情况并改进 Taptiva。"
         },
 
         "localNetwork": {
             "title": "本地网络通信",
-            "p1": "Taptiva 通过本地网络在你的 Mac 和移动设备之间进行直接通信。",
-            "p2": "连接过程中交换的信息仅用于提供应用程序的远程控制功能。"
+            "p1": "Taptiva 通过本地网络在电脑和移动设备之间进行直接通信。",
+            "p2": "连接过程中交换的信息用于提供应用程序的远程控制功能。"
         },
 
         "accessibility": {
             "title": "辅助功能权限",
-            "p1": "Taptiva 需要 macOS 的辅助功能权限，以便在 Mac 上执行远程控制操作，例如与鼠标、键盘和其他受支持的系统控制功能进行交互。",
+            "p1": "在 macOS 上，Taptiva 需要辅助功能权限，以便在 Mac 上执行远程控制操作，例如与鼠标、键盘和其他受支持的系统控制功能进行交互。",
             "p2": "此权限由 macOS 管理，你可以随时前往“系统设置”→“隐私与安全性”→“辅助功能”撤销该权限。"
         },
 

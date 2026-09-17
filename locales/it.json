@@ -7,13 +7,15 @@
     },
 
     "hero": {
-        "eyebrow": "Taptiva 1.0 · Gratis per Mac",
+        "eyebrow": "Taptiva · Provalo gratis",
         "title": "Taptiva",
-        "subtitle": "Il tuo telefono. Il tuo Mac. Completamente connessi.",
-        "description": "Trasforma il tuo iPhone o smartphone Android in un potente telecomando per il tuo Mac, con gesti del trackpad, tastiera, controlli musicali e cambio delle app.",
-        "download": "Scarica Taptiva 1.0",
+        "subtitle": "Il tuo telefono. Il tuo computer. Completamente connessi.",
+        "description": "Trasforma il tuo iPhone o smartphone Android in un potente telecomando per il tuo Mac o PC Windows, con gesti del trackpad, tastiera, controlli multimediali e cambio delle app.",
+        "downloadMac": "Taptiva.dmg",
+        "downloadWindows": "Taptiva.exe",
+        "download": "Prova Taptiva gratis",
         "discover": "Scopri Taptiva",
-        "free": "Gratis · Nessun account richiesto · macOS",
+        "free": "Nessun account richiesto · Mac e Windows",
         "enjoy": "Ti piace Taptiva?",
         "support": "☕ Supporta Taptiva"
     },
@@ -32,44 +34,44 @@
 
     "features": {
         "title": "Tutto ciò di cui hai bisogno.",
-        "subtitle": "Un modo semplice e potente per controllare il tuo Mac dal tuo telefono.",
+        "subtitle": "Un modo semplice e potente per controllare il tuo Mac o PC Windows dal tuo telefono.",
 
         "trackpad": {
             "title": "Trackpad",
-            "description": "Controlla il tuo Mac con gesti touch fluidi. Sposta il cursore, fai clic, scorri e naviga in modo naturale."
+            "description": "Controlla il tuo computer con gesti touch fluidi. Sposta il cursore, fai clic, scorri e naviga in modo naturale."
         },
 
         "keyboard": {
             "title": "Tastiera",
-            "description": "Scrivi direttamente dal tuo telefono utilizzando una tastiera remota completa progettata per il tuo Mac."
+            "description": "Scrivi direttamente dal tuo telefono utilizzando una tastiera remota completa progettata per il tuo computer."
         },
 
         "music": {
-            "title": "Controlli musicali",
-            "description": "Controlla la tua musica senza lasciare la scrivania. Riproduci, metti in pausa, cambia brano e gestisci la riproduzione."
+            "title": "Controlli multimediali",
+            "description": "Controlla i tuoi contenuti multimediali senza lasciare la scrivania. Riproduci, metti in pausa, cambia traccia e gestisci la riproduzione."
         },
 
         "apps": {
             "title": "Cambio delle app",
-            "description": "Passa rapidamente da un'applicazione all'altra sul tuo Mac direttamente dal tuo telefono."
+            "description": "Passa rapidamente da un'applicazione all'altra sul tuo Mac o PC Windows direttamente dal tuo telefono."
         }
     },
 
     "device": {
         "title": "Il tuo telefono diventa un telecomando.",
-        "description": "Collega il tuo telefono direttamente al Mac e controllalo da qualsiasi punto della tua rete locale.",
+        "description": "Collega il tuo telefono direttamente al Mac o al PC Windows e controllalo da qualsiasi punto della tua rete locale.",
         "icon": "⌁"
     },
 
     "privacy": {
-        "title": "Privacy fin dalla progettazione.",
-        "description": "Taptiva crea una connessione diretta tra il tuo telefono e il Mac. Non sono richiesti account, abbonamenti o servizi cloud.",
+        "title": "Controllo locale. Nessun account richiesto.",
+        "description": "Taptiva collega direttamente il tuo telefono al Mac o al PC Windows tramite la rete locale. Non è necessario alcun account per associare e controllare il computer.",
         "learnMore": "Scopri di più sulla privacy"
     },
 
     "support": {
         "title": "Supporta Taptiva",
-        "description": "Taptiva è gratuita e sviluppata in modo indipendente. Se la trovi utile, considera di sostenere il suo sviluppo.",
+        "description": "Taptiva è sviluppata in modo indipendente. Se la trovi utile, considera di sostenere il suo sviluppo.",
         "button": "☕ Supporta Taptiva"
     },
 
@@ -82,31 +84,31 @@
 
         "title": "Supporto Taptiva",
 
-        "subtitle": "Controllo touch remoto per Mac. Veloce, privato e collegato direttamente al tuo telefono.",
+        "subtitle": "Controllo touch remoto per Mac e Windows. Veloce, privato e collegato direttamente al tuo telefono.",
 
         "connection": {
             "title": "Come connettersi",
-            "description": "Apri Taptiva sul tuo Mac e scansiona il codice QR con il tuo iPhone o smartphone Android. Il tuo telefono si collega direttamente al Mac."
+            "description": "Apri Taptiva sul tuo Mac o PC Windows e scansiona il codice QR con il tuo iPhone o smartphone Android. Il tuo telefono si collega direttamente al computer tramite la rete locale."
         },
 
         "accessibility": {
             "title": "Accessibilità",
-            "description": "Taptiva richiede l'autorizzazione Accessibilità per controllare il tuo Mac. Apri Impostazioni di Sistema, quindi Privacy e Sicurezza → Accessibilità e abilita Taptiva."
+            "description": "Taptiva richiede l'autorizzazione Accessibilità su macOS per controllare il tuo Mac. Apri Impostazioni di Sistema, quindi Privacy e Sicurezza → Accessibilità e abilita Taptiva."
         },
 
         "connectionProblems": {
             "title": "Problemi di connessione",
-            "description": "Assicurati che il Mac e il telefono siano collegati alla stessa rete Wi-Fi. Se necessario, ristabilisci la connessione scansionando nuovamente il codice QR."
+            "description": "Assicurati che il computer e il telefono siano collegati alla stessa rete locale. Se necessario, ristabilisci la connessione scansionando nuovamente il codice QR."
         },
 
         "privacy": {
             "title": "Privacy",
-            "description": "Taptiva utilizza una connessione diretta tra il tuo telefono e il Mac. Non è richiesto alcun account cloud."
+            "description": "Taptiva utilizza una connessione locale diretta tra il tuo telefono e il computer per il controllo remoto. Non è richiesto alcun account."
         },
 
         "support": {
             "title": "Ti piace Taptiva?",
-            "description": "Taptiva è gratuita e sviluppata in modo indipendente. Se la trovi utile, considera di sostenere il suo sviluppo.",
+            "description": "Taptiva è sviluppata in modo indipendente. Se la trovi utile, considera di sostenere il suo sviluppo.",
             "button": "☕ Supporta Taptiva"
         },
 
@@ -125,27 +127,25 @@
 
         "overview": {
             "title": "Panoramica",
-            "p1": "Taptiva è un'applicazione di controllo touch remoto per Mac. Consente agli utenti di controllare il proprio Mac utilizzando un iPhone o un dispositivo Android tramite una rete locale.",
-            "p2": "Taptiva è progettata per funzionare senza richiedere un account, un servizio cloud o un abbonamento."
+            "p1": "Taptiva è un'applicazione di controllo touch remoto per Mac e Windows. Consente agli utenti di controllare il proprio computer utilizzando un iPhone o un dispositivo Android tramite una rete locale.",
+            "p2": "Le funzionalità principali di controllo remoto di Taptiva non richiedono un account o un servizio cloud."
         },
 
         "dataCollection": {
             "title": "Raccolta dei dati",
-            "p1": "Taptiva non raccoglie, memorizza o vende informazioni personali tramite l'applicazione. L'app Taptiva non richiede un account o un servizio cloud per fornire le sue funzionalità principali.",
-            "p2": "Il nostro sito web utilizza Google Analytics per capire come i visitatori utilizzano il sito e per aiutarci a migliorarne i contenuti e le funzionalità.",
-            "p3": "Google Analytics può raccogliere informazioni quali la posizione geografica approssimativa, informazioni sul browser e sul dispositivo, statistiche delle sessioni e interazioni con il sito web. Google Analytics può inoltre utilizzare cookie proprietari, incluso il cookie _ga, per distinguere gli utenti e le sessioni.",
-            "p4": "Non inviamo intenzionalmente a Google Analytics informazioni che consentano di identificare personalmente gli utenti."
+            "p1": "Taptiva è progettato con un approccio local-first. Il tuo telefono si connette direttamente al tuo Mac o PC Windows tramite la rete locale. Non sono necessari un account o una connessione al cloud per il controllo remoto.",
+            "p2": "Il nostro sito web utilizza Google Analytics per comprendere l'utilizzo del sito e migliorare Taptiva."
         },
 
         "localNetwork": {
             "title": "Comunicazione tramite rete locale",
-            "p1": "Taptiva comunica direttamente tra il tuo Mac e il tuo dispositivo mobile tramite la rete locale.",
-            "p2": "Le informazioni scambiate durante questa connessione vengono utilizzate esclusivamente per fornire le funzionalità di controllo remoto dell'applicazione."
+            "p1": "Taptiva comunica direttamente tra il tuo computer e il tuo dispositivo mobile tramite la rete locale.",
+            "p2": "Le informazioni scambiate durante questa connessione vengono utilizzate per fornire le funzionalità di controllo remoto dell'applicazione."
         },
 
         "accessibility": {
             "title": "Autorizzazione Accessibilità",
-            "p1": "Taptiva richiede l'autorizzazione Accessibilità di macOS per eseguire azioni di controllo remoto sul tuo Mac, come interagire con il mouse, la tastiera e altri controlli di sistema supportati.",
+            "p1": "Su macOS, Taptiva richiede l'autorizzazione Accessibilità per eseguire azioni di controllo remoto sul tuo Mac, come interagire con il mouse, la tastiera e altri controlli di sistema supportati.",
             "p2": "Questa autorizzazione è gestita da macOS e può essere revocata in qualsiasi momento da Impostazioni di Sistema → Privacy e Sicurezza → Accessibilità."
         },
 

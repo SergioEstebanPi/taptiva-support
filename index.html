@@ -27,25 +27,20 @@
       "@type": "SoftwareApplication",
       "name": "Taptiva",
       "applicationCategory": "UtilitiesApplication",
-      "operatingSystem": "macOS",
-      "description": "Turn your iPhone or Android phone into a remote touch controller for your Mac.",
+      "operatingSystem": "macOS, Windows",
+      "description": "Turn your iPhone or Android phone into a remote touch controller for your Mac & Windows.",
       "url": "https://taptiva.tech/",
       "downloadUrl": "https://taptiva.tech/download/",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      }
     }
     </script>
 
     <link rel="icon" type="image/png" href="/img/logo.png">
     <link rel="canonical" href="https://taptiva.tech/">
-    <title>Taptiva — Remote Touch Control for Mac</title>
+    <title>Taptiva — Remote Touch Control for Mac & Windows</title>
 
     <meta
         name="description"
-        content="Turn your iPhone or Android phone into a remote touch controller for your Mac. Direct connection, no cloud, no accounts."
+        content="Turn your iPhone or Android phone into a powerful remote control for your Mac or Windows PC — with trackpad gestures, keyboard, media controls and app switching."
     >
 
     <style>
@@ -291,6 +286,74 @@
             flex-wrap: wrap;
         }
 
+
+        .hero-buttons .button {
+            background: #050505;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: #fff;
+            box-shadow:
+                0 4px 18px rgba(0, 0, 0, 0.45),
+                inset 0 1px 0 rgba(255, 255, 255, 0.04);
+
+            transition:
+                background 0.2s ease,
+                border-color 0.2s ease,
+                box-shadow 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        .hero-buttons .button:hover {
+            background: #0b0b0b;
+            border-color: rgba(255, 255, 255, 0.22);
+            box-shadow:
+                0 6px 24px rgba(0, 0, 0, 0.55),
+                inset 0 1px 0 rgba(255, 255, 255, 0.06);
+            transform: translateY(-1px);
+        }
+
+
+        /* Mac — brillo blanco muy sutil */
+
+        .hero-buttons .download-mac:hover {
+            border-color: rgba(255, 255, 255, 0.30);
+            box-shadow:
+                0 0 22px rgba(255, 255, 255, 0.06),
+                0 6px 24px rgba(0, 0, 0, 0.55);
+        }
+
+
+        /* Windows — azul OLED muy tenue */
+
+        .hero-buttons .download-windows {
+            border-color: rgba(41, 151, 255, 0.18);
+        }
+
+        .hero-buttons .download-windows:hover {
+            border-color: rgba(41, 151, 255, 0.40);
+            box-shadow:
+                0 0 24px rgba(41, 151, 255, 0.10),
+                0 6px 24px rgba(0, 0, 0, 0.55);
+        }
+
+
+        /* Iconos perfectamente alineados */
+
+        .hero-buttons .platform-icon {
+            width: 18px;
+            height: 18px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 18px;
+        }
+
+        .hero-buttons .platform-icon img {
+            display: block;
+            width: 18px;
+            height: 18px;
+            object-fit: contain;
+        }
+
         .button {
             display: inline-block;
 
@@ -349,6 +412,50 @@
             width: 16px;
             height: 16px;
             display: block;
+        }
+
+        .platform-icon {
+            width: 18px;
+            height: 18px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .platform-icon img {
+            width: 18px;
+            height: 18px;
+            object-fit: contain;
+        }
+
+        .platform-icon.windows {
+            position: relative;
+            top: 4px;
+        }
+
+        .windows-logo img {
+            width: 17px;
+            height: 17px;
+        }
+
+        .download-mac {
+            background: rgba(255, 255, 255, 0.10);
+            border-color: rgba(255, 255, 255, 0.16);
+        }
+
+        .download-mac:hover {
+            background: rgba(255, 255, 255, 0.16);
+        }
+
+
+        .download-windows {
+            background: rgba(41, 151, 255, 0.10);
+            border-color: rgba(41, 151, 255, 0.22);
+        }
+
+        .download-windows:hover {
+            background: rgba(41, 151, 255, 0.16);
         }
 
         /* =========================
@@ -1097,7 +1204,7 @@
             class="eyebrow"
             data-i18n="hero.eyebrow">
 
-            Taptiva 1.0 · Free for Mac
+            Taptiva · Try for free
 
         </div>
 
@@ -1108,7 +1215,7 @@
 
 
         <h2 data-i18n="hero.subtitle">
-            Your phone. Your Mac. Fully connected.
+            Your phone. Your computer. Fully connected.
         </h2>
 
 
@@ -1119,12 +1226,13 @@
             loop
             playsinline
             preload="metadata"
-            aria-label="Taptiva controlling a Mac from a phone">
+            aria-label="Taptiva controlling a computer from a phone">
 
             <source src="video/taptiva-demo.mp4" type="video/mp4">
 
             Your browser does not support video playback.
         </video>
+
 
         <!-- MAIN ACTIONS -->
 
@@ -1132,13 +1240,43 @@
 
             <a
                 class="button button-primary download-mac"
-                href="/download/">
-                <span class="apple-logo" aria-hidden="true">
-                    <img src="img/apple-logo.svg" alt="">
+                href="/download/?platform=mac"
+                onclick="gtag('event', 'download_click', {
+                    platform: 'macOS',
+                    location: 'home'
+                });">
+
+                <span class="platform-icon">
+                    <img
+                        src="img/apple-logo.svg"
+                        alt="">
                 </span>
-                <span data-i18n="hero.download">
-                    Download Taptiva 1.0
+
+                <span data-i18n="hero.downloadMac">
+                    Taptiva.dmg
                 </span>
+
+            </a>
+
+
+            <a
+                class="button button-secondary download-windows"
+                href="/download/?platform=windows"
+                onclick="gtag('event', 'download_click', {
+                    platform: 'Windows',
+                    location: 'home'
+                });">
+
+                <span class="platform-icon windows">
+                    <img
+                        src="img/windows-11.png"
+                        alt="">
+                </span>
+
+                <span data-i18n="hero.downloadWindows">
+                    Taptiva.exe
+                </span>
+
             </a>
 
 
@@ -1153,50 +1291,62 @@
 
         </div>
 
+
         <div
             class="hero-meta"
             data-i18n="hero.free">
 
-            Free · No account required · macOS
+            Try for free · No account required · Mac & Windows
 
         </div>
+
 
         <div class="stay-connected">
 
             <div
                 class="stay-connected-title"
                 data-i18n="subscribe.title">
+
                 Stay updated with Taptiva
+
             </div>
+
 
             <div
                 class="stay-connected-description"
                 data-i18n="subscribe.description">
+
                 Get notified about new features, updates and releases.
+
             </div>
+
 
             <form
                 id="subscribeForm"
                 class="email-form"
                 method="post">
 
-            <input
-                id="subscribeEmail"
-                type="email"
-                name="email"
-                data-i18n-placeholder="subscribe.placeholder"
-                placeholder="Your email address"
-                autocomplete="email"
-                required>
+                <input
+                    id="subscribeEmail"
+                    type="email"
+                    name="email"
+                    data-i18n-placeholder="subscribe.placeholder"
+                    placeholder="Your email address"
+                    autocomplete="email"
+                    required>
+
 
                 <button
                     id="subscribeButton"
                     type="submit"
                     data-i18n="subscribe.button">
+
                     Stay updated
+
                 </button>
 
             </form>
+
 
             <div
                 id="subscribeMessage"
@@ -1204,12 +1354,16 @@
                 aria-live="polite">
             </div>
 
+
             <p
                 class="privacy-note"
                 data-i18n="subscribe.privacy">
+
                 Email subscription is optional and is only used to send
                 Taptiva updates and releases.
+
             </p>
+
 
             <div class="social-link">
 
@@ -1236,17 +1390,17 @@
 
         </div>
 
+
         <p data-i18n="hero.description">
 
             Turn your iPhone or Android phone into a
-            powerful remote control for your Mac —
-            with trackpad gestures, keyboard, music
-            controls and app switching.
+            powerful remote control for your Mac or Windows PC —
+            with trackpad gestures, keyboard, media controls
+            and app switching.
 
         </p>
 
     </section>
-
 
     <!-- =========================
          CONNECTION
@@ -1306,7 +1460,7 @@
 
                 <h2 data-i18n="device.title">
 
-                    Control your Mac
+                    Control your computer
                     <br>
                     from your phone.
 
@@ -1316,7 +1470,7 @@
                 <p data-i18n="device.description">
 
                     Scan the QR code shown by Taptiva
-                    on your Mac to pair your phone
+                    on your Mac or Windows PC to pair your phone
                     directly over your local network.
 
                 </p>
@@ -1369,8 +1523,8 @@
                 <p data-i18n="features.trackpad.description">
 
                     Connect your phone directly to your
-                    Mac over your local network.
-                    No cloud service is required.
+                    Mac or Windows PC over your local network.
+                    No cloud service is required for the control connection.
 
                 </p>
 
@@ -1393,7 +1547,7 @@
 
                     Use your iPhone or Android phone
                     as a remote touch controller
-                    for your Mac.
+                    for your Mac or Windows PC.
 
                 </p>
 
@@ -1414,7 +1568,7 @@
 
                 <p data-i18n="features.music.description">
 
-                    Control your Mac using touch gestures,
+                    Control your Mac or Windows using touch gestures,
                     a virtual trackpad, keyboard input,
                     and radial controls.
 
@@ -1438,9 +1592,8 @@
                 <p data-i18n="features.apps.description">
 
                     No account is required.
-                    No cloud storage.
                     Your phone communicates directly
-                    with your Mac.
+                    with your computer over the local network.
 
                 </p>
 
@@ -1459,15 +1612,16 @@
     <section class="privacy">
 
         <h2 data-i18n="privacy.title">
-            No cloud. No accounts.
+            Local control. No account required.
         </h2>
 
 
         <p data-i18n="privacy.description">
 
-            Taptiva is designed around a direct
-            connection between your phone and your Mac.
-            Your control session stays on your local network.
+            Taptiva connects your phone directly to your
+            Mac or Windows PC over your local network.
+            No account is required to pair and control
+            your computer.
 
         </p>
 

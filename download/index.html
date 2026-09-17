@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Taptiva — Remote Touch Control for Mac">
+    <meta property="og:title" content="Taptiva — Remote Touch Control for Mac & Windows">
     <meta property="og:description"
-        content="Turn your iPhone or Android phone into a remote touch controller for your Mac. Direct connection, no cloud, no accounts.">
-    <meta property="og:url" content="https://taptiva.tech/">
+        content="Turn your iPhone or Android phone into a remote touch controller for your Mac or Windows PC. Direct local connection, no account required.">
+    <meta property="og:url" content="https://taptiva.tech/download/">
     <meta property="og:image" content="https://taptiva.tech/img/og-image.png">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Taptiva — Remote Touch Control for Mac">
+    <meta name="twitter:title" content="Taptiva — Remote Touch Control for Mac & Windows">
     <meta name="twitter:description"
-        content="Turn your iPhone or Android phone into a remote touch controller for your Mac. Direct connection, no cloud, no accounts.">
+        content="Turn your iPhone or Android phone into a remote touch controller for your Mac or Windows PC. Direct local connection, no account required.">
     <meta name="twitter:image" content="https://taptiva.tech/img/og-image.png">
 
     <link rel="icon" type="image/png" href="/img/logo.png">
-    <link rel="canonical" href="https://taptiva.tech/">
+    <link rel="canonical" href="https://taptiva.tech/download/">
+
     <title>Downloading Taptiva</title>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KWKJR2DSM7"></script>
@@ -242,18 +243,15 @@
         <div
             class="status"
             id="status">
-            Taptiva 1.0 · Free for Mac
+            Taptiva 1.0 · Try for free
         </div>
 
         <p class="fallback">
             Download not starting?
             <a
-                href="https://github.com/SergioEstebanPi/taptiva-support/releases/latest/download/Taptiva.dmg"
-                onclick="gtag('event', 'download_manual', {
-                    file_name: 'Taptiva.dmg',
-                    version: '1.0',
-                    location: 'download_page',
-                });">
+                id="manualDownload"
+                href="#"
+                onclick="manualDownload(); return false;">
                 Download manually
             </a>
         </p>
@@ -261,8 +259,8 @@
         <div class="support">
 
             <p>
-                Taptiva is free.
-                If you enjoy using it, you can support its development.
+                Enjoying Taptiva?
+                You can support its development.
             </p>
 
             <a
@@ -287,16 +285,109 @@
 
     </main>
 
-    <script>
-        const downloadUrl =
-            "https://github.com/SergioEstebanPi/taptiva-support/releases/latest/download/Taptiva.dmg";
 
-        const spinner = document.getElementById("spinner");
-        const title = document.getElementById("title");
-        const description = document.getElementById("description");
-        const status = document.getElementById("status");
+    <script>
+
+        // ============================================================
+        // DOWNLOAD CONFIGURATION
+        // ============================================================
+
+        const downloads = {
+
+            mac: {
+
+                url:
+                    "https://github.com/SergioEstebanPi/taptiva-support/releases/latest/download/Taptiva.dmg",
+
+                fileName:
+                    "Taptiva.dmg",
+
+                platform:
+                    "macOS",
+
+                description:
+                    "Taptiva is being downloaded to your Mac."
+            },
+
+            windows: {
+
+                url:
+                    "https://github.com/SergioEstebanPi/taptiva-support/releases/latest/download/Taptiva.exe",
+
+                fileName:
+                    "Taptiva.exe",
+
+                platform:
+                    "Windows",
+
+                description:
+                    "Taptiva is being downloaded to your Windows PC."
+            }
+
+        };
+
+
+        // ============================================================
+        // SELECT PLATFORM FROM URL
+        // ============================================================
+
+        const params =
+            new URLSearchParams(window.location.search);
+
+        const requestedPlatform =
+            params.get("platform");
+
+
+        let selectedDownload;
+
+
+        if (requestedPlatform === "windows") {
+
+            selectedDownload =
+                downloads.windows;
+
+        } else {
+
+            // Default to Mac when no platform is specified.
+            selectedDownload =
+                downloads.mac;
+        }
+
+
+        // ============================================================
+        // ELEMENTS
+        // ============================================================
+
+        const spinner =
+            document.getElementById("spinner");
+
+        const title =
+            document.getElementById("title");
+
+        const description =
+            document.getElementById("description");
+
+        const status =
+            document.getElementById("status");
+
+        const manualDownloadLink =
+            document.getElementById("manualDownload");
+
+
+        // ============================================================
+        // UPDATE MANUAL DOWNLOAD
+        // ============================================================
+
+        manualDownloadLink.href =
+            selectedDownload.url;
+
+
+        // ============================================================
+        // DOWNLOAD
+        // ============================================================
 
         let navigationStarted = false;
+
 
         function startDownload() {
 
@@ -306,60 +397,125 @@
 
             navigationStarted = true;
 
-            // Stop the loader
+
+            // Stop loader
             spinner.classList.add("done");
 
-            // Update the interface
-            title.textContent = "Download started";
+
+            // Update interface
+            title.textContent =
+                "Download started";
+
 
             description.textContent =
-                "Taptiva is being downloaded to your Mac.";
+                selectedDownload.description;
+
 
             status.textContent =
-                "Taptiva 1.0 · Download in progress";
+                `Taptiva 1.0 · ${selectedDownload.platform}`;
+
 
             status.classList.add("success");
 
+
             const navigate = () => {
-                window.location.href = downloadUrl;
+
+                window.location.href =
+                    selectedDownload.url;
+
             };
 
-            // Send analytics before leaving the page
+
+            // ========================================================
+            // ANALYTICS
+            // ========================================================
+
             if (typeof gtag === "function") {
 
-                let fallbackTimer = setTimeout(() => {
-                    navigate();
-                }, 500);
+                let fallbackTimer =
+                    setTimeout(() => {
+
+                        navigate();
+
+                    }, 700);
+
 
                 gtag("event", "download", {
 
-                    file_name: "Taptiva.dmg",
+                    file_name:
+                        selectedDownload.fileName,
 
-                    version: "1.0",
+                    version:
+                        "1.0",
 
-                    location: "download_page",
+                    platform:
+                        selectedDownload.platform,
+
+                    location:
+                        "download",
 
                     event_callback: () => {
 
                         clearTimeout(fallbackTimer);
 
                         navigate();
+
                     }
 
                 });
 
             } else {
 
-                // Analytics unavailable
                 navigate();
 
             }
+
         }
 
+
+        // ============================================================
+        // MANUAL DOWNLOAD
+        // ============================================================
+
+        function manualDownload() {
+
+            if (typeof gtag === "function") {
+
+                gtag("event", "download_manual", {
+
+                    file_name:
+                        selectedDownload.fileName,
+
+                    version:
+                        "1.0",
+
+                    platform:
+                        selectedDownload.platform,
+
+                    location:
+                        "download"
+
+                });
+
+            }
+
+            window.location.href =
+                selectedDownload.url;
+
+        }
+
+
+        // ============================================================
+        // START AUTOMATIC DOWNLOAD
+        // ============================================================
+
         setTimeout(() => {
+
             startDownload();
+
         }, 1000);
 
     </script>
+
 </body>
 </html>
